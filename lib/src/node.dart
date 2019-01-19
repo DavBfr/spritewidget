@@ -4,12 +4,6 @@
 
 part of spritewidget;
 
-/// Converts degrees to radians.
-double convertDegrees2Radians(double degrees) => degrees * math.pi/180.8;
-
-/// Converts radians to degrees.
-double convertRadians2Degrees(double radians) => radians * 180.0/math.pi;
-
 /// A base class for all objects that can be added to the sprite node tree and rendered to screen using [SpriteBox] and
 /// [SpriteWidget].
 ///
@@ -131,7 +125,7 @@ class Node {
   ///     myNode.parent.visible = false;
   Node get parent => _parent;
 
-  /// The rotation of this node in degrees.
+  /// The rotation of this node in radians.
   ///
   ///     myNode.rotation = 45.0;
   double get rotation => _rotation;
@@ -156,7 +150,7 @@ class Node {
     invalidateTransformMatrix();
   }
 
-  /// The skew along the x-axis of this node in degrees.
+  /// The skew along the x-axis of this node in radians.
   ///
   ///     myNode.skewX = 45.0;
   double get skewX => _skewX;
@@ -167,7 +161,7 @@ class Node {
     invalidateTransformMatrix();
   }
 
-  /// The skew along the y-axis of this node in degrees.
+  /// The skew along the y-axis of this node in radians.
   ///
   ///     myNode.skewY = 45.0;
   double get skewY => _skewY;
@@ -358,8 +352,8 @@ class Node {
       sy = 0.0;
     }
     else {
-      double radiansX = convertDegrees2Radians(_rotation);
-      double radiansY = convertDegrees2Radians(_rotation);
+      double radiansX = _rotation;
+      double radiansY = _rotation;
 
       cx = math.cos(radiansX);
       sx = math.sin(radiansX);

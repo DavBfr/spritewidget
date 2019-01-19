@@ -64,7 +64,7 @@ class ConstraintRotationToMovement extends Constraint {
 
     // Get the target angle
     Offset offset = node.position - _lastPosition;
-    double target = degrees(GameMath.atan2(offset.dy, offset.dx)) + baseRotation;
+    double target = GameMath.atan2(offset.dy, offset.dx) + baseRotation;
 
     node.rotation = _dampenRotation(node.rotation, target, dampening);
   }
@@ -128,7 +128,7 @@ class ConstraintRotationToNode extends Constraint {
         - targetNode.convertPointToBoxSpace(Offset.zero);
     }
 
-    double target = degrees(GameMath.atan2(offset.dy, offset.dx)) + baseRotation;
+    double target = GameMath.atan2(offset.dy, offset.dx) + baseRotation;
 
     node.rotation = _dampenRotation(node.rotation, target, dampening);
   }

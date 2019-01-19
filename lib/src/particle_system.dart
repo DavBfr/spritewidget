@@ -139,7 +139,7 @@ class ParticleSystem extends Node {
   /// properties.
   bool rotateToMovement;
 
-  /// The direction in which each particle will be emitted in degrees.
+  /// The direction in which each particle will be emitted in radians.
   double direction;
 
   /// Variance of the [direction] property.
@@ -348,7 +348,7 @@ class ParticleSystem extends Node {
     particle.deltaRotation = (endRotationFinal - particle.rotation) / particle.timeToLive;
 
     // Direction
-    double dirRadians = convertDegrees2Radians(direction + directionVar * randomSignedDouble());
+    double dirRadians = direction + directionVar * randomSignedDouble();
     Vector2 dirVector = new Vector2(math.cos(dirRadians), math.sin(dirRadians));
     double speedFinal = speed + speedVar * randomSignedDouble();
     particle.dir = dirVector..scale(speedFinal);
@@ -424,11 +424,11 @@ class ParticleSystem extends Node {
       double ssin;
       if (rotateToMovement) {
         double extraRotation = GameMath.atan2(particle.dir[1], particle.dir[0]);
-        scos = math.cos(convertDegrees2Radians(particle.rotation) + extraRotation) * particle.size;
-        ssin = math.sin(convertDegrees2Radians(particle.rotation) + extraRotation) * particle.size;
+        scos = math.cos(particle.rotation + extraRotation) * particle.size;
+        ssin = math.sin(particle.rotation + extraRotation) * particle.size;
       } else if (particle.rotation != 0.0) {
-        scos = math.cos(convertDegrees2Radians(particle.rotation)) * particle.size;
-        ssin = math.sin(convertDegrees2Radians(particle.rotation)) * particle.size;
+        scos = math.cos(particle.rotation) * particle.size;
+        ssin = math.sin(particle.rotation) * particle.size;
       } else {
         scos = particle.size;
         ssin = 0.0;

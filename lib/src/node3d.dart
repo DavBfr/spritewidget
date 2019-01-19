@@ -14,7 +14,7 @@ class Node3D extends Node {
 
   double _rotationX = 0.0;
 
-  /// The node's rotation around the x axis in degrees.
+  /// The node's rotation around the x axis in radians.
   double get rotationX => _rotationX;
 
   set rotationX(double rotationX) {
@@ -24,7 +24,7 @@ class Node3D extends Node {
 
   double _rotationY = 0.0;
 
-  /// The node's rotation around the y axis in degrees.
+  /// The node's rotation around the y axis in radians.
   double get rotationY => _rotationY;
 
   set rotationY(double rotationY) {
