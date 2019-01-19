@@ -81,9 +81,8 @@
     
     
     
+    
       <li class="section-title"><a href="spritewidget/spritewidget-library.html#functions">Functions</a></li>
-      <li><a href="spritewidget/convertDegrees2Radians.html">convertDegrees2Radians</a></li>
-      <li><a href="spritewidget/convertRadians2Degrees.html">convertRadians2Degrees</a></li>
       <li><a href="spritewidget/deserializeBlendMode.html">deserializeBlendMode</a></li>
       <li><a href="spritewidget/deserializeColor.html">deserializeColor</a></li>
       <li><a href="spritewidget/deserializeColorSequence.html">deserializeColorSequence</a></li>
@@ -113,7 +112,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-    <h1>SpriteBox class</h1>
+      <h1>SpriteBox class </h1>
 
     <section class="desc markdown">
       <p>A <code>RenderBox</code> that draws a sprite world represented by a <a href="spritewidget/Node-class.html">Node</a> tree.</p>
@@ -139,15 +138,23 @@
       <dl class="properties">
         <dt id="frameRate" class="property">
           <span class="name"><a href="spritewidget/SpriteBox/frameRate.html">frameRate</a></span>
-          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8594; double</span> 
         </dt>
         <dd>
           An instantaneous estimate of the number of frames per second this sprite box is producing.
           <div class="features">read-only</div>
 </dd>
+        <dt id="paused" class="property">
+          <span class="name"><a href="spritewidget/SpriteBox/paused.html">paused</a></span>
+          <span class="signature">&#8596; dynamic</span> 
+        </dt>
+        <dd>
+          
+          <div class="features">read / write</div>
+</dd>
         <dt id="rootNode" class="property">
           <span class="name"><a href="spritewidget/SpriteBox/rootNode.html">rootNode</a></span>
-          <span class="signature">&#8596; <a href="spritewidget/NodeWithSize-class.html">NodeWithSize</a></span>
+          <span class="signature">&#8596; <a href="spritewidget/NodeWithSize-class.html">NodeWithSize</a></span> 
         </dt>
         <dd>
           The root node of the node tree that is rendered by this box. <a href="spritewidget/SpriteBox/rootNode.html">[...]</a>
@@ -155,7 +162,7 @@
 </dd>
         <dt id="transformMatrix" class="property">
           <span class="name"><a href="spritewidget/SpriteBox/transformMatrix.html">transformMatrix</a></span>
-          <span class="signature">&#8594; Matrix4</span>
+          <span class="signature">&#8594; Matrix4</span> 
         </dt>
         <dd>
           The transformation matrix used to transform the root node to the space of the box. <a href="spritewidget/SpriteBox/transformMatrix.html">[...]</a>
@@ -163,7 +170,7 @@
 </dd>
         <dt id="transformMode" class="property">
           <span class="name"><a href="spritewidget/SpriteBox/transformMode.html">transformMode</a></span>
-          <span class="signature">&#8596; <a href="spritewidget/SpriteBoxTransformMode-class.html">SpriteBoxTransformMode</a></span>
+          <span class="signature">&#8596; <a href="spritewidget/SpriteBoxTransformMode-class.html">SpriteBoxTransformMode</a></span> 
         </dt>
         <dd>
           The transform mode used by the <a href="spritewidget/SpriteBox-class.html">SpriteBox</a>.
@@ -171,7 +178,7 @@
 </dd>
         <dt id="visibleArea" class="property">
           <span class="name"><a href="spritewidget/SpriteBox/visibleArea.html">visibleArea</a></span>
-          <span class="signature">&#8594; <a href="dart-ui/Rect-class.html">Rect</a></span>
+          <span class="signature">&#8594; Rect</span> 
         </dt>
         <dd>
           A rectangle that represents the visible area of the sprite world's
@@ -180,7 +187,7 @@ coordinate system.
 </dd>
         <dt id="alwaysNeedsCompositing" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/alwaysNeedsCompositing.html">alwaysNeedsCompositing</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether this render object always needs compositing. <a href="spritewidget/SpriteBox/alwaysNeedsCompositing.html">[...]</a>
@@ -188,7 +195,7 @@ coordinate system.
 </dd>
         <dt id="attached" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/attached.html">attached</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether this node is in a tree whose root is attached to something. <a href="spritewidget/SpriteBox/attached.html">[...]</a>
@@ -196,7 +203,7 @@ coordinate system.
 </dd>
         <dt id="constraints" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/constraints.html">constraints</a></span>
-          <span class="signature">&#8594; BoxConstraints</span>
+          <span class="signature">&#8594; BoxConstraints</span> 
         </dt>
         <dd class="inherited">
           The box constraints most recently received from the parent.
@@ -204,7 +211,7 @@ coordinate system.
 </dd>
         <dt id="debugCanParentUseSize" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugCanParentUseSize.html">debugCanParentUseSize</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether the parent render object is permitted to use this render object's
@@ -213,7 +220,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="debugCreator" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugCreator.html">debugCreator</a></span>
-          <span class="signature">&#8596; dynamic</span>
+          <span class="signature">&#8596; dynamic</span> 
         </dt>
         <dd class="inherited">
           The object responsible for creating this render object. <a href="spritewidget/SpriteBox/debugCreator.html">[...]</a>
@@ -221,7 +228,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="debugDoingThisLayout" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugDoingThisLayout.html">debugDoingThisLayout</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether <a href="spritewidget/SpriteBox/performLayout.html">performLayout</a> for this render object is currently running. <a href="spritewidget/SpriteBox/debugDoingThisLayout.html">[...]</a>
@@ -229,7 +236,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="debugDoingThisPaint" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugDoingThisPaint.html">debugDoingThisPaint</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether <a href="spritewidget/SpriteBox/paint.html">paint</a> for this render object is currently running. <a href="spritewidget/SpriteBox/debugDoingThisPaint.html">[...]</a>
@@ -237,7 +244,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="debugDoingThisResize" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugDoingThisResize.html">debugDoingThisResize</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether <a href="spritewidget/SpriteBox/performResize.html">performResize</a> for this render object is currently running. <a href="spritewidget/SpriteBox/debugDoingThisResize.html">[...]</a>
@@ -245,7 +252,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="debugLayer" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugLayer.html">debugLayer</a></span>
-          <span class="signature">&#8594; OffsetLayer</span>
+          <span class="signature">&#8594; OffsetLayer</span> 
         </dt>
         <dd class="inherited">
           In debug mode, the compositing layer that this render object uses to repaint. <a href="spritewidget/SpriteBox/debugLayer.html">[...]</a>
@@ -253,7 +260,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="debugNeedsLayout" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugNeedsLayout.html">debugNeedsLayout</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether this render object's layout information is dirty. <a href="spritewidget/SpriteBox/debugNeedsLayout.html">[...]</a>
@@ -261,7 +268,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="debugNeedsPaint" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugNeedsPaint.html">debugNeedsPaint</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether this render object's paint information is dirty. <a href="spritewidget/SpriteBox/debugNeedsPaint.html">[...]</a>
@@ -269,7 +276,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="debugSemantics" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugSemantics.html">debugSemantics</a></span>
-          <span class="signature">&#8594; SemanticsNode</span>
+          <span class="signature">&#8594; SemanticsNode</span> 
         </dt>
         <dd class="inherited">
           The semantics of this render object. <a href="spritewidget/SpriteBox/debugSemantics.html">[...]</a>
@@ -277,23 +284,23 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="depth" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/depth.html">depth</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8594; int</span> 
         </dt>
         <dd class="inherited">
           The depth of this node in the tree. <a href="spritewidget/SpriteBox/depth.html">[...]</a>
           <div class="features">read-only, inherited</div>
 </dd>
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span> 
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="spritewidget/SpriteBox/hashCode.html">[...]</a>
           <div class="features">read-only, inherited</div>
 </dd>
         <dt id="hasSize" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/hasSize.html">hasSize</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether this render object has undergone layout and has a <a href="spritewidget/SpriteBox/size.html">size</a>.
@@ -301,7 +308,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="isRepaintBoundary" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/isRepaintBoundary.html">isRepaintBoundary</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether this render object repaints separately from its parent. <a href="spritewidget/SpriteBox/isRepaintBoundary.html">[...]</a>
@@ -309,7 +316,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="layer" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/layer.html">layer</a></span>
-          <span class="signature">&#8594; OffsetLayer</span>
+          <span class="signature">&#8594; OffsetLayer</span> 
         </dt>
         <dd class="inherited">
           The compositing layer that this render object uses to repaint. <a href="spritewidget/SpriteBox/layer.html">[...]</a>
@@ -317,7 +324,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="needsCompositing" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/needsCompositing.html">needsCompositing</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether we or one of our descendants has a compositing layer. <a href="spritewidget/SpriteBox/needsCompositing.html">[...]</a>
@@ -325,7 +332,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="owner" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/owner.html">owner</a></span>
-          <span class="signature">&#8594; PipelineOwner</span>
+          <span class="signature">&#8594; PipelineOwner</span> 
         </dt>
         <dd class="inherited">
           The owner for this node (null if unattached). <a href="spritewidget/SpriteBox/owner.html">[...]</a>
@@ -333,7 +340,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="paintBounds" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/paintBounds.html">paintBounds</a></span>
-          <span class="signature">&#8594; <a href="dart-ui/Rect-class.html">Rect</a></span>
+          <span class="signature">&#8594; Rect</span> 
         </dt>
         <dd class="inherited">
           Returns a rectangle that contains all the pixels painted by this box. <a href="spritewidget/SpriteBox/paintBounds.html">[...]</a>
@@ -341,7 +348,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="parent" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/parent.html">parent</a></span>
-          <span class="signature">&#8594; AbstractNode</span>
+          <span class="signature">&#8594; AbstractNode</span> 
         </dt>
         <dd class="inherited">
           The parent of this node in the tree.
@@ -349,15 +356,15 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="parentData" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/parentData.html">parentData</a></span>
-          <span class="signature">&#8596; ParentData</span>
+          <span class="signature">&#8596; ParentData</span> 
         </dt>
         <dd class="inherited">
           Data for use by the parent render object. <a href="spritewidget/SpriteBox/parentData.html">[...]</a>
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span> 
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object.
@@ -365,7 +372,7 @@ size. <a href="spritewidget/SpriteBox/debugCanParentUseSize.html">[...]</a>
 </dd>
         <dt id="semanticBounds" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/semanticBounds.html">semanticBounds</a></span>
-          <span class="signature">&#8594; <a href="dart-ui/Rect-class.html">Rect</a></span>
+          <span class="signature">&#8594; Rect</span> 
         </dt>
         <dd class="inherited">
           The bounding box, in the local coordinate system, of this
@@ -374,7 +381,7 @@ object, for accessibility purposes.
 </dd>
         <dt id="size" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/size.html">size</a></span>
-          <span class="signature">&#8596; <a href="dart-ui/Size-class.html">Size</a></span>
+          <span class="signature">&#8596; Size</span> 
         </dt>
         <dd class="inherited">
           The size of this render box computed during layout. <a href="spritewidget/SpriteBox/size.html">[...]</a>
@@ -382,7 +389,7 @@ object, for accessibility purposes.
 </dd>
         <dt id="sizedByParent" class="property inherited">
           <span class="name"><a href="spritewidget/SpriteBox/sizedByParent.html">sizedByParent</a></span>
-          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8594; bool</span> 
         </dt>
         <dd class="inherited">
           Whether the constraints are the only input to the sizing algorithm (in
@@ -396,55 +403,55 @@ particular, child nodes have no impact). <a href="spritewidget/SpriteBox/sizedBy
       <h2>Methods</h2>
       <dl class="callables">
         <dt id="attach" class="callable">
-          <span class="name"><a href="spritewidget/SpriteBox/attach.html">attach</a></span><span class="signature">(<wbr><span class="parameter" id="attach-param-owner"><span class="type-annotation">PipelineOwner</span> <span class="parameter-name">owner</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/attach.html">attach</a></span><span class="signature">(<wbr><span class="parameter" id="attach-param-owner"><span>covariant</span> <span class="type-annotation">PipelineOwner</span> <span class="parameter-name">owner</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd>
-          
+          Mark this node as attached to the given owner. <a href="spritewidget/SpriteBox/attach.html">[...]</a>
           
 </dd>
         <dt id="detach" class="callable">
           <span class="name"><a href="spritewidget/SpriteBox/detach.html">detach</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd>
           Mark this node as detached. <a href="spritewidget/SpriteBox/detach.html">[...]</a>
           
 </dd>
         <dt id="findNodesAtPosition" class="callable">
-          <span class="name"><a href="spritewidget/SpriteBox/findNodesAtPosition.html">findNodesAtPosition</a></span><span class="signature">(<wbr><span class="parameter" id="findNodesAtPosition-param-position"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">position</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="spritewidget/Node-class.html">Node</a></span>&gt;</span></span>
+          <span class="name"><a href="spritewidget/SpriteBox/findNodesAtPosition.html">findNodesAtPosition</a></span><span class="signature">(<wbr><span class="parameter" id="findNodesAtPosition-param-position"><span class="type-annotation">Offset</span> <span class="parameter-name">position</span></span>)
+            <span class="returntype parameter">&#8594; List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="spritewidget/Node-class.html">Node</a></span>&gt;</span></span>
           </span>
-        </dt>
+          </dt>
         <dd>
           Finds all nodes at a position defined in the box's coordinates. <a href="spritewidget/SpriteBox/findNodesAtPosition.html">[...]</a>
           
 </dd>
         <dt id="handleEvent" class="callable">
-          <span class="name"><a href="spritewidget/SpriteBox/handleEvent.html">handleEvent</a></span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">PointerEvent</span> <span class="parameter-name">event</span>, </span> <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation">_SpriteBoxHitTestEntry</span> <span class="parameter-name">entry</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/handleEvent.html">handleEvent</a></span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation">PointerEvent</span> <span class="parameter-name">event</span>, </span> <span class="parameter" id="handleEvent-param-entry"><span>covariant</span> <span class="type-annotation">_SpriteBoxHitTestEntry</span> <span class="parameter-name">entry</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd>
           Override this method to handle pointer events that hit this render object. <a href="spritewidget/SpriteBox/handleEvent.html">[...]</a>
           
 </dd>
         <dt id="hitTest" class="callable">
-          <span class="name"><a href="spritewidget/SpriteBox/hitTest.html">hitTest</a></span><span class="signature">(<wbr><span class="parameter" id="hitTest-param-result"><span class="type-annotation">HitTestResult</span> <span class="parameter-name">result</span>, {</span> <span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">position</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/hitTest.html">hitTest</a></span><span class="signature">(<wbr><span class="parameter" id="hitTest-param-result"><span class="type-annotation">HitTestResult</span> <span class="parameter-name">result</span>, {</span> <span class="parameter" id="hitTest-param-position"><span class="type-annotation">Offset</span> <span class="parameter-name">position</span></span> })
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd>
           Determines the set of render objects located at the given position. <a href="spritewidget/SpriteBox/hitTest.html">[...]</a>
           
 </dd>
         <dt id="paint" class="callable">
-          <span class="name"><a href="spritewidget/SpriteBox/paint.html">paint</a></span><span class="signature">(<wbr><span class="parameter" id="paint-param-context"><span class="type-annotation">PaintingContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="paint-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/paint.html">paint</a></span><span class="signature">(<wbr><span class="parameter" id="paint-param-context"><span class="type-annotation">PaintingContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="paint-param-offset"><span class="type-annotation">Offset</span> <span class="parameter-name">offset</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd>
           Paint this render object into the given context at the given offset. <a href="spritewidget/SpriteBox/paint.html">[...]</a>
           
@@ -453,35 +460,35 @@ particular, child nodes have no impact). <a href="spritewidget/SpriteBox/sizedBy
           <span class="name"><a href="spritewidget/SpriteBox/performLayout.html">performLayout</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd>
-          
+          Do the work of computing the layout for this render object. <a href="spritewidget/SpriteBox/performLayout.html">[...]</a>
           
 </dd>
         <dt id="adoptChild" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/adoptChild.html">adoptChild</a></span><span class="signature">(<wbr><span class="parameter" id="adoptChild-param-child"><span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/adoptChild.html">adoptChild</a></span><span class="signature">(<wbr><span class="parameter" id="adoptChild-param-child"><span>covariant</span> <span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Called by subclasses when they decide a render object is a child. <a href="spritewidget/SpriteBox/adoptChild.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="applyPaintTransform" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/applyPaintTransform.html">applyPaintTransform</a></span><span class="signature">(<wbr><span class="parameter" id="applyPaintTransform-param-child"><span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="applyPaintTransform-param-transform"><span class="type-annotation">Matrix4</span> <span class="parameter-name">transform</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/applyPaintTransform.html">applyPaintTransform</a></span><span class="signature">(<wbr><span class="parameter" id="applyPaintTransform-param-child"><span>covariant</span> <span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="applyPaintTransform-param-transform"><span class="type-annotation">Matrix4</span> <span class="parameter-name">transform</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Multiply the transform from the parent's coordinate system to this box's
 coordinate system into the given transform. <a href="spritewidget/SpriteBox/applyPaintTransform.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="assembleSemanticsNode" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/assembleSemanticsNode.html">assembleSemanticsNode</a></span><span class="signature">(<wbr><span class="parameter" id="assembleSemanticsNode-param-node"><span class="type-annotation">SemanticsNode</span> <span class="parameter-name">node</span>, </span> <span class="parameter" id="assembleSemanticsNode-param-config"><span class="type-annotation">SemanticsConfiguration</span> <span class="parameter-name">config</span>, </span> <span class="parameter" id="assembleSemanticsNode-param-children"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter">SemanticsNode</span>&gt;</span></span> <span class="parameter-name">children</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/assembleSemanticsNode.html">assembleSemanticsNode</a></span><span class="signature">(<wbr><span class="parameter" id="assembleSemanticsNode-param-node"><span class="type-annotation">SemanticsNode</span> <span class="parameter-name">node</span>, </span> <span class="parameter" id="assembleSemanticsNode-param-config"><span class="type-annotation">SemanticsConfiguration</span> <span class="parameter-name">config</span>, </span> <span class="parameter" id="assembleSemanticsNode-param-children"><span class="type-annotation">Iterable<span class="signature">&lt;<wbr><span class="type-parameter">SemanticsNode</span>&gt;</span></span> <span class="parameter-name">children</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Assemble the <code>SemanticsNode</code> for this <code>RenderObject</code>. <a href="spritewidget/SpriteBox/assembleSemanticsNode.html">[...]</a>
           <div class="features">inherited</div>
@@ -490,16 +497,16 @@ coordinate system into the given transform. <a href="spritewidget/SpriteBox/appl
           <span class="name"><a href="spritewidget/SpriteBox/clearSemantics.html">clearSemantics</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Removes all semantics from this render object and its descendants. <a href="spritewidget/SpriteBox/clearSemantics.html">[...]</a>
           <div class="features">@mustCallSuper, inherited</div>
 </dd>
         <dt id="computeDistanceToActualBaseline" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation">TextBaseline</span> <span class="parameter-name">baseline</span></span>)
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns the distance from the y-coordinate of the position of the box to
 the y-coordinate of the first given baseline in the box's contents, if
@@ -507,59 +514,59 @@ any, or null otherwise. <a href="spritewidget/SpriteBox/computeDistanceToActualB
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="computeMaxIntrinsicHeight" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/computeMaxIntrinsicHeight.html">computeMaxIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="computeMaxIntrinsicHeight-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/computeMaxIntrinsicHeight.html">computeMaxIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="computeMaxIntrinsicHeight-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>)
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Computes the value returned by <a href="spritewidget/SpriteBox/getMaxIntrinsicHeight.html">getMaxIntrinsicHeight</a>. Do not call this
 function directly, instead, call <a href="spritewidget/SpriteBox/getMaxIntrinsicHeight.html">getMaxIntrinsicHeight</a>. <a href="spritewidget/SpriteBox/computeMaxIntrinsicHeight.html">[...]</a>
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="computeMaxIntrinsicWidth" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/computeMaxIntrinsicWidth.html">computeMaxIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="computeMaxIntrinsicWidth-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/computeMaxIntrinsicWidth.html">computeMaxIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="computeMaxIntrinsicWidth-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Computes the value returned by <a href="spritewidget/SpriteBox/getMaxIntrinsicWidth.html">getMaxIntrinsicWidth</a>. Do not call this
 function directly, instead, call <a href="spritewidget/SpriteBox/getMaxIntrinsicWidth.html">getMaxIntrinsicWidth</a>. <a href="spritewidget/SpriteBox/computeMaxIntrinsicWidth.html">[...]</a>
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="computeMinIntrinsicHeight" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/computeMinIntrinsicHeight.html">computeMinIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="computeMinIntrinsicHeight-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/computeMinIntrinsicHeight.html">computeMinIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="computeMinIntrinsicHeight-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>)
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Computes the value returned by <a href="spritewidget/SpriteBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a>. Do not call this
 function directly, instead, call <a href="spritewidget/SpriteBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a>. <a href="spritewidget/SpriteBox/computeMinIntrinsicHeight.html">[...]</a>
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="computeMinIntrinsicWidth" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/computeMinIntrinsicWidth.html">computeMinIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="computeMinIntrinsicWidth-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/computeMinIntrinsicWidth.html">computeMinIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="computeMinIntrinsicWidth-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Computes the value returned by <a href="spritewidget/SpriteBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a>. Do not call this
 function directly, instead, call <a href="spritewidget/SpriteBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a>. <a href="spritewidget/SpriteBox/computeMinIntrinsicWidth.html">[...]</a>
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="debugAdoptSize" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/debugAdoptSize.html">debugAdoptSize</a></span><span class="signature">(<wbr><span class="parameter" id="debugAdoptSize-param-value"><span class="type-annotation"><a href="dart-ui/Size-class.html">Size</a></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-ui/Size-class.html">Size</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/debugAdoptSize.html">debugAdoptSize</a></span><span class="signature">(<wbr><span class="parameter" id="debugAdoptSize-param-value"><span class="type-annotation">Size</span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; Size</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          Claims ownership of the given <a href="dart-ui/Size-class.html">Size</a>. <a href="spritewidget/SpriteBox/debugAdoptSize.html">[...]</a>
+          Claims ownership of the given <code>Size</code>. <a href="spritewidget/SpriteBox/debugAdoptSize.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="debugAssertDoesMeetConstraints" class="callable inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugAssertDoesMeetConstraints.html">debugAssertDoesMeetConstraints</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Verify that the object's constraints are being met. Override
 this function in a subclass to verify that your state matches
@@ -570,73 +577,74 @@ not met, it should assert or throw an exception.
 </dd>
         <dt id="debugDescribeChildren" class="callable inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugDescribeChildren.html">debugDescribeChildren</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter">DiagnosticsNode</span>&gt;</span></span>
+            <span class="returntype parameter">&#8594; List<span class="signature">&lt;<wbr><span class="type-parameter">DiagnosticsNode</span>&gt;</span></span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          
+          Returns a list of <code>DiagnosticsNode</code> objects describing this node's
+children. <a href="spritewidget/SpriteBox/debugDescribeChildren.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="debugFillProperties" class="callable inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugFillProperties.html">debugFillProperties</a></span><span class="signature">(<wbr><span class="parameter" id="debugFillProperties-param-properties"><span class="type-annotation">DiagnosticPropertiesBuilder</span> <span class="parameter-name">properties</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          
+          Add additional properties associated with the node. <a href="spritewidget/SpriteBox/debugFillProperties.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="debugHandleEvent" class="callable inherited">
           <span class="name"><a href="spritewidget/SpriteBox/debugHandleEvent.html">debugHandleEvent</a></span><span class="signature">(<wbr><span class="parameter" id="debugHandleEvent-param-event"><span class="type-annotation">PointerEvent</span> <span class="parameter-name">event</span>, </span> <span class="parameter" id="debugHandleEvent-param-entry"><span class="type-annotation">HitTestEntry</span> <span class="parameter-name">entry</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Implements the <code>debugPaintPointersEnabled</code> debugging feature. <a href="spritewidget/SpriteBox/debugHandleEvent.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="debugPaint" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/debugPaint.html">debugPaint</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaint-param-context"><span class="type-annotation">PaintingContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaint-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/debugPaint.html">debugPaint</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaint-param-context"><span class="type-annotation">PaintingContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaint-param-offset"><span class="type-annotation">Offset</span> <span class="parameter-name">offset</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Override this method to paint debugging information.
           <div class="features">inherited</div>
 </dd>
         <dt id="debugPaintBaselines" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/debugPaintBaselines.html">debugPaintBaselines</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaintBaselines-param-context"><span class="type-annotation">PaintingContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaintBaselines-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/debugPaintBaselines.html">debugPaintBaselines</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaintBaselines-param-context"><span class="type-annotation">PaintingContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaintBaselines-param-offset"><span class="type-annotation">Offset</span> <span class="parameter-name">offset</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           In debug mode, paints a line for each baseline. <a href="spritewidget/SpriteBox/debugPaintBaselines.html">[...]</a>
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="debugPaintPointers" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/debugPaintPointers.html">debugPaintPointers</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaintPointers-param-context"><span class="type-annotation">PaintingContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaintPointers-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/debugPaintPointers.html">debugPaintPointers</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaintPointers-param-context"><span class="type-annotation">PaintingContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaintPointers-param-offset"><span class="type-annotation">Offset</span> <span class="parameter-name">offset</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           In debug mode, paints a rectangle if this render box has counted more
 pointer downs than pointer up events. <a href="spritewidget/SpriteBox/debugPaintPointers.html">[...]</a>
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="debugPaintSize" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/debugPaintSize.html">debugPaintSize</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaintSize-param-context"><span class="type-annotation">PaintingContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaintSize-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/debugPaintSize.html">debugPaintSize</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaintSize-param-context"><span class="type-annotation">PaintingContext</span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaintSize-param-offset"><span class="type-annotation">Offset</span> <span class="parameter-name">offset</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           In debug mode, paints a border around this render box. <a href="spritewidget/SpriteBox/debugPaintSize.html">[...]</a>
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="debugRegisterRepaintBoundaryPaint" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/debugRegisterRepaintBoundaryPaint.html">debugRegisterRepaintBoundaryPaint</a></span><span class="signature">(<wbr>{<span class="parameter" id="debugRegisterRepaintBoundaryPaint-param-includedParent"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includedParent</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="debugRegisterRepaintBoundaryPaint-param-includedChild"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includedChild</span>: <span class="default-value">false</span></span> })
+          <span class="name"><a href="spritewidget/SpriteBox/debugRegisterRepaintBoundaryPaint.html">debugRegisterRepaintBoundaryPaint</a></span><span class="signature">(<wbr>{<span class="parameter" id="debugRegisterRepaintBoundaryPaint-param-includedParent"><span class="type-annotation">bool</span> <span class="parameter-name">includedParent</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="debugRegisterRepaintBoundaryPaint-param-includedChild"><span class="type-annotation">bool</span> <span class="parameter-name">includedChild</span>: <span class="default-value">false</span></span> })
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Called, in checked mode, if <a href="spritewidget/SpriteBox/isRepaintBoundary.html">isRepaintBoundary</a> is true, when either the
 this render object or its parent attempt to paint. <a href="spritewidget/SpriteBox/debugRegisterRepaintBoundaryPaint.html">[...]</a>
@@ -646,7 +654,7 @@ this render object or its parent attempt to paint. <a href="spritewidget/SpriteB
           <span class="name"><a href="spritewidget/SpriteBox/debugResetSize.html">debugResetSize</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           If a subclass has a "size" (the state controlled by <code>parentUsesSize</code>,
 whatever it is in the subclass, e.g. the actual <code>size</code> property of
@@ -657,58 +665,74 @@ subclass should override <a href="spritewidget/SpriteBox/debugResetSize.html">de
           <div class="features">inherited</div>
 </dd>
         <dt id="describeApproximatePaintClip" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/describeApproximatePaintClip.html">describeApproximatePaintClip</a></span><span class="signature">(<wbr><span class="parameter" id="describeApproximatePaintClip-param-child"><span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-ui/Rect-class.html">Rect</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/describeApproximatePaintClip.html">describeApproximatePaintClip</a></span><span class="signature">(<wbr><span class="parameter" id="describeApproximatePaintClip-param-child"><span>covariant</span> <span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; Rect</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns a rect in this object's coordinate system that describes
 the approximate bounding box of the clip rect that would be
 applied to the given child during the paint phase, if any. <a href="spritewidget/SpriteBox/describeApproximatePaintClip.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
+        <dt id="describeSemanticsClip" class="callable inherited">
+          <span class="name"><a href="spritewidget/SpriteBox/describeSemanticsClip.html">describeSemanticsClip</a></span><span class="signature">(<wbr><span class="parameter" id="describeSemanticsClip-param-child"><span>covariant</span> <span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; Rect</span>
+          </span>
+          </dt>
+        <dd class="inherited">
+          Returns a rect in this object's coordinate system that describes
+which <code>SemanticsNode</code>s produced by the <code>child</code> should be included in the
+semantics tree. <code>SemanticsNode</code>s from the <code>child</code> that are positioned
+outside of this rect will be dropped. Child <code>SemanticsNode</code>s that are
+positioned inside this rect, but outside of <a href="spritewidget/SpriteBox/describeApproximatePaintClip.html">describeApproximatePaintClip</a>
+will be included in the tree marked as hidden. Child <code>SemanticsNode</code>s
+that are inside of both rect will be included in the tree as regular
+nodes. <a href="spritewidget/SpriteBox/describeSemanticsClip.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
         <dt id="describeSemanticsConfiguration" class="callable inherited">
           <span class="name"><a href="spritewidget/SpriteBox/describeSemanticsConfiguration.html">describeSemanticsConfiguration</a></span><span class="signature">(<wbr><span class="parameter" id="describeSemanticsConfiguration-param-config"><span class="type-annotation">SemanticsConfiguration</span> <span class="parameter-name">config</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Report the semantics of this node, for example for accessibility purposes. <a href="spritewidget/SpriteBox/describeSemanticsConfiguration.html">[...]</a>
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="dropChild" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/dropChild.html">dropChild</a></span><span class="signature">(<wbr><span class="parameter" id="dropChild-param-child"><span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/dropChild.html">dropChild</a></span><span class="signature">(<wbr><span class="parameter" id="dropChild-param-child"><span>covariant</span> <span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Called by subclasses when they decide a render object is no longer a child. <a href="spritewidget/SpriteBox/dropChild.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="getDistanceToActualBaseline" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="getDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="getDistanceToActualBaseline-param-baseline"><span class="type-annotation">TextBaseline</span> <span class="parameter-name">baseline</span></span>)
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Calls <a href="spritewidget/SpriteBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a> and caches the result. <a href="spritewidget/SpriteBox/getDistanceToActualBaseline.html">[...]</a>
           <div class="features">@mustCallSuper, @protected, inherited</div>
 </dd>
         <dt id="getDistanceToBaseline" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/getDistanceToBaseline.html">getDistanceToBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="getDistanceToBaseline-param-baseline"><span class="type-annotation"><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span>, {</span> <span class="parameter" id="getDistanceToBaseline-param-onlyReal"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">onlyReal</span>: <span class="default-value">false</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/getDistanceToBaseline.html">getDistanceToBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="getDistanceToBaseline-param-baseline"><span class="type-annotation">TextBaseline</span> <span class="parameter-name">baseline</span>, {</span> <span class="parameter" id="getDistanceToBaseline-param-onlyReal"><span class="type-annotation">bool</span> <span class="parameter-name">onlyReal</span>: <span class="default-value">false</span></span> })
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns the distance from the y-coordinate of the position of the box to
 the y-coordinate of the first given baseline in the box's contents. <a href="spritewidget/SpriteBox/getDistanceToBaseline.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="getMaxIntrinsicHeight" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/getMaxIntrinsicHeight.html">getMaxIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicHeight-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/getMaxIntrinsicHeight.html">getMaxIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicHeight-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>)
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns the smallest height beyond which increasing the height never
 decreases the preferred width. The preferred width is the value that
@@ -716,10 +740,10 @@ would be returned by <a href="spritewidget/SpriteBox/getMinIntrinsicWidth.html">
           <div class="features">@mustCallSuper, inherited</div>
 </dd>
         <dt id="getMaxIntrinsicWidth" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/getMaxIntrinsicWidth.html">getMaxIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicWidth-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/getMaxIntrinsicWidth.html">getMaxIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicWidth-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns the smallest width beyond which increasing the width never
 decreases the preferred height. The preferred height is the value that
@@ -727,20 +751,20 @@ would be returned by <a href="spritewidget/SpriteBox/getMinIntrinsicHeight.html"
           <div class="features">@mustCallSuper, inherited</div>
 </dd>
         <dt id="getMinIntrinsicHeight" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicHeight-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicHeight-param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span></span>)
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns the minimum height that this box could be without failing to
 correctly paint its contents within itself, without clipping. <a href="spritewidget/SpriteBox/getMinIntrinsicHeight.html">[...]</a>
           <div class="features">@mustCallSuper, inherited</div>
 </dd>
         <dt id="getMinIntrinsicWidth" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicWidth-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicWidth-param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; double</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns the minimum width that this box could be without failing to
 correctly paint its contents within itself, without clipping. <a href="spritewidget/SpriteBox/getMinIntrinsicWidth.html">[...]</a>
@@ -750,36 +774,36 @@ correctly paint its contents within itself, without clipping. <a href="spritewid
           <span class="name"><a href="spritewidget/SpriteBox/getTransformTo.html">getTransformTo</a></span><span class="signature">(<wbr><span class="parameter" id="getTransformTo-param-ancestor"><span class="type-annotation">RenderObject</span> <span class="parameter-name">ancestor</span></span>)
             <span class="returntype parameter">&#8594; Matrix4</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Applies the paint transform up the tree to <code>ancestor</code>. <a href="spritewidget/SpriteBox/getTransformTo.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="globalToLocal" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/globalToLocal.html">globalToLocal</a></span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="globalToLocal-param-ancestor"><span class="type-annotation">RenderObject</span> <span class="parameter-name">ancestor</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/globalToLocal.html">globalToLocal</a></span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation">Offset</span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="globalToLocal-param-ancestor"><span class="type-annotation">RenderObject</span> <span class="parameter-name">ancestor</span></span> })
+            <span class="returntype parameter">&#8594; Offset</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Convert the given point from the global coordinate system in logical pixels
 to the local coordinate system for this box. <a href="spritewidget/SpriteBox/globalToLocal.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="hitTestChildren" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/hitTestChildren.html">hitTestChildren</a></span><span class="signature">(<wbr><span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation">HitTestResult</span> <span class="parameter-name">result</span>, {</span> <span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">position</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/hitTestChildren.html">hitTestChildren</a></span><span class="signature">(<wbr><span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation">HitTestResult</span> <span class="parameter-name">result</span>, {</span> <span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation">Offset</span> <span class="parameter-name">position</span></span> })
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Override this method to check whether any children are located at the
 given position. <a href="spritewidget/SpriteBox/hitTestChildren.html">[...]</a>
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="hitTestSelf" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/hitTestSelf.html">hitTestSelf</a></span><span class="signature">(<wbr><span class="parameter" id="hitTestSelf-param-position"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">position</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/hitTestSelf.html">hitTestSelf</a></span><span class="signature">(<wbr><span class="parameter" id="hitTestSelf-param-position"><span class="type-annotation">Offset</span> <span class="parameter-name">position</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Override this method if this render object can be hit even if its
 children were not hit. <a href="spritewidget/SpriteBox/hitTestSelf.html">[...]</a>
@@ -789,7 +813,7 @@ children were not hit. <a href="spritewidget/SpriteBox/hitTestSelf.html">[...]</
           <span class="name"><a href="spritewidget/SpriteBox/invokeLayoutCallback.html">invokeLayoutCallback</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T extends Constraints</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="invokeLayoutCallback-param-callback"><span class="type-annotation">LayoutCallback<span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">callback</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Allows mutations to be made to this object's child list (and any
 descendants) as well as to any other dirty nodes in the render tree owned
@@ -799,19 +823,19 @@ callback's execution. <a href="spritewidget/SpriteBox/invokeLayoutCallback.html"
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="layout" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/layout.html">layout</a></span><span class="signature">(<wbr><span class="parameter" id="layout-param-constraints"><span class="type-annotation">Constraints</span> <span class="parameter-name">constraints</span>, {</span> <span class="parameter" id="layout-param-parentUsesSize"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">parentUsesSize</span>: <span class="default-value">false</span></span> })
+          <span class="name"><a href="spritewidget/SpriteBox/layout.html">layout</a></span><span class="signature">(<wbr><span class="parameter" id="layout-param-constraints"><span class="type-annotation">Constraints</span> <span class="parameter-name">constraints</span>, {</span> <span class="parameter" id="layout-param-parentUsesSize"><span class="type-annotation">bool</span> <span class="parameter-name">parentUsesSize</span>: <span class="default-value">false</span></span> })
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Compute the layout for this render object. <a href="spritewidget/SpriteBox/layout.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="localToGlobal" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/localToGlobal.html">localToGlobal</a></span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="localToGlobal-param-ancestor"><span class="type-annotation">RenderObject</span> <span class="parameter-name">ancestor</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/localToGlobal.html">localToGlobal</a></span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation">Offset</span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="localToGlobal-param-ancestor"><span class="type-annotation">RenderObject</span> <span class="parameter-name">ancestor</span></span> })
+            <span class="returntype parameter">&#8594; Offset</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Convert the given point from the local coordinate system for this box to
 the global coordinate system in logical pixels. <a href="spritewidget/SpriteBox/localToGlobal.html">[...]</a>
@@ -821,7 +845,7 @@ the global coordinate system in logical pixels. <a href="spritewidget/SpriteBox/
           <span class="name"><a href="spritewidget/SpriteBox/markNeedsCompositingBitsUpdate.html">markNeedsCompositingBitsUpdate</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Mark the compositing state for this render object as dirty. <a href="spritewidget/SpriteBox/markNeedsCompositingBitsUpdate.html">[...]</a>
           <div class="features">inherited</div>
@@ -830,7 +854,7 @@ the global coordinate system in logical pixels. <a href="spritewidget/SpriteBox/
           <span class="name"><a href="spritewidget/SpriteBox/markNeedsLayout.html">markNeedsLayout</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Mark this render object's layout information as dirty, and either register
 this object with its <code>PipelineOwner</code>, or defer to the parent, depending on
@@ -841,7 +865,7 @@ whether this object is a relayout boundary or not respectively. <a href="spritew
           <span class="name"><a href="spritewidget/SpriteBox/markNeedsLayoutForSizedByParentChange.html">markNeedsLayoutForSizedByParentChange</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Mark this render object's layout information as dirty (like
 <a href="spritewidget/SpriteBox/markNeedsLayout.html">markNeedsLayout</a>), and additionally also handle any necessary work to
@@ -852,7 +876,7 @@ handle the case where <a href="spritewidget/SpriteBox/sizedByParent.html">sizedB
           <span class="name"><a href="spritewidget/SpriteBox/markNeedsPaint.html">markNeedsPaint</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Mark this render object as having changed its visual appearance. <a href="spritewidget/SpriteBox/markNeedsPaint.html">[...]</a>
           <div class="features">inherited</div>
@@ -861,7 +885,7 @@ handle the case where <a href="spritewidget/SpriteBox/sizedByParent.html">sizedB
           <span class="name"><a href="spritewidget/SpriteBox/markNeedsSemanticsUpdate.html">markNeedsSemanticsUpdate</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Mark this node as needing an update to its semantics description. <a href="spritewidget/SpriteBox/markNeedsSemanticsUpdate.html">[...]</a>
           <div class="features">inherited</div>
@@ -870,26 +894,26 @@ handle the case where <a href="spritewidget/SpriteBox/sizedByParent.html">sizedB
           <span class="name"><a href="spritewidget/SpriteBox/markParentNeedsLayout.html">markParentNeedsLayout</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Mark this render object's layout information as dirty, and then defer to
 the parent. <a href="spritewidget/SpriteBox/markParentNeedsLayout.html">[...]</a>
           <div class="features">@protected, inherited</div>
 </dd>
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+          <span class="name"><a href="spritewidget/SpriteBox/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="spritewidget/SpriteBox/noSuchMethod.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="performResize" class="callable inherited">
           <span class="name"><a href="spritewidget/SpriteBox/performResize.html">performResize</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Updates the render objects size using only the constraints. <a href="spritewidget/SpriteBox/performResize.html">[...]</a>
           <div class="features">inherited</div>
@@ -898,7 +922,7 @@ the parent. <a href="spritewidget/SpriteBox/markParentNeedsLayout.html">[...]</a
           <span class="name"><a href="spritewidget/SpriteBox/reassemble.html">reassemble</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Cause the entire subtree rooted at the given <code>RenderObject</code> to be marked
 dirty for layout, paint, etc, so that the effects of a hot reload can be
@@ -910,7 +934,7 @@ seen, or so that the effect of changing a global debug flag (such as
           <span class="name"><a href="spritewidget/SpriteBox/redepthChild.html">redepthChild</a></span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation">AbstractNode</span> <span class="parameter-name">child</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Adjust the <a href="spritewidget/SpriteBox/depth.html">depth</a> of the given <code>child</code> to be greater than this node's own
 <a href="spritewidget/SpriteBox/depth.html">depth</a>. <a href="spritewidget/SpriteBox/redepthChild.html">[...]</a>
@@ -920,7 +944,7 @@ seen, or so that the effect of changing a global debug flag (such as
           <span class="name"><a href="spritewidget/SpriteBox/redepthChildren.html">redepthChildren</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Adjust the <a href="spritewidget/SpriteBox/depth.html">depth</a> of this node's children, if any. <a href="spritewidget/SpriteBox/redepthChildren.html">[...]</a>
           <div class="features">inherited</div>
@@ -929,7 +953,7 @@ seen, or so that the effect of changing a global debug flag (such as
           <span class="name"><a href="spritewidget/SpriteBox/replaceRootLayer.html">replaceRootLayer</a></span><span class="signature">(<wbr><span class="parameter" id="replaceRootLayer-param-rootLayer"><span class="type-annotation">OffsetLayer</span> <span class="parameter-name">rootLayer</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Replace the layer. This is only valid for the root of a render
 object subtree (whatever object <a href="spritewidget/SpriteBox/scheduleInitialPaint.html">scheduleInitialPaint</a> was
@@ -937,10 +961,10 @@ called on). <a href="spritewidget/SpriteBox/replaceRootLayer.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="rotate" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/rotate.html">rotate</a></span><span class="signature">(<wbr>{<span class="parameter" id="rotate-param-oldAngle"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">oldAngle</span>, </span> <span class="parameter" id="rotate-param-newAngle"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">newAngle</span>, </span> <span class="parameter" id="rotate-param-time"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">time</span></span> })
+          <span class="name"><a href="spritewidget/SpriteBox/rotate.html">rotate</a></span><span class="signature">(<wbr>{<span class="parameter" id="rotate-param-oldAngle"><span class="type-annotation">int</span> <span class="parameter-name">oldAngle</span>, </span> <span class="parameter" id="rotate-param-newAngle"><span class="type-annotation">int</span> <span class="parameter-name">newAngle</span>, </span> <span class="parameter" id="rotate-param-time"><span class="type-annotation">Duration</span> <span class="parameter-name">time</span></span> })
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Rotate this render object (not yet implemented).
           <div class="features">inherited</div>
@@ -949,7 +973,7 @@ called on). <a href="spritewidget/SpriteBox/replaceRootLayer.html">[...]</a>
           <span class="name"><a href="spritewidget/SpriteBox/scheduleInitialLayout.html">scheduleInitialLayout</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Bootstrap the rendering pipeline by scheduling the very first layout. <a href="spritewidget/SpriteBox/scheduleInitialLayout.html">[...]</a>
           <div class="features">inherited</div>
@@ -958,7 +982,7 @@ called on). <a href="spritewidget/SpriteBox/replaceRootLayer.html">[...]</a>
           <span class="name"><a href="spritewidget/SpriteBox/scheduleInitialPaint.html">scheduleInitialPaint</a></span><span class="signature">(<wbr><span class="parameter" id="scheduleInitialPaint-param-rootLayer"><span class="type-annotation">ContainerLayer</span> <span class="parameter-name">rootLayer</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Bootstrap the rendering pipeline by scheduling the very first paint. <a href="spritewidget/SpriteBox/scheduleInitialPaint.html">[...]</a>
           <div class="features">inherited</div>
@@ -967,53 +991,64 @@ called on). <a href="spritewidget/SpriteBox/replaceRootLayer.html">[...]</a>
           <span class="name"><a href="spritewidget/SpriteBox/scheduleInitialSemantics.html">scheduleInitialSemantics</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Bootstrap the semantics reporting mechanism by marking this node
 as needing a semantics update. <a href="spritewidget/SpriteBox/scheduleInitialSemantics.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
-        <dt id="setupParentData" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/setupParentData.html">setupParentData</a></span><span class="signature">(<wbr><span class="parameter" id="setupParentData-param-child"><span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span></span>)
+        <dt id="sendSemanticsEvent" class="callable inherited">
+          <span class="name"><a href="spritewidget/SpriteBox/sendSemanticsEvent.html">sendSemanticsEvent</a></span><span class="signature">(<wbr><span class="parameter" id="sendSemanticsEvent-param-semanticsEvent"><span class="type-annotation">SemanticsEvent</span> <span class="parameter-name">semanticsEvent</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
+        <dd class="inherited">
+          Sends a <code>SemanticsEvent</code> associated with this render object's <code>SemanticsNode</code>. <a href="spritewidget/SpriteBox/sendSemanticsEvent.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="setupParentData" class="callable inherited">
+          <span class="name"><a href="spritewidget/SpriteBox/setupParentData.html">setupParentData</a></span><span class="signature">(<wbr><span class="parameter" id="setupParentData-param-child"><span>covariant</span> <span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+          </dt>
         <dd class="inherited">
           Override to setup parent data correctly for your children. <a href="spritewidget/SpriteBox/setupParentData.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="showOnScreen" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/showOnScreen.html">showOnScreen</a></span><span class="signature">(<wbr>[<span class="parameter" id="showOnScreen-param-child"><span class="type-annotation">RenderObject</span> <span class="parameter-name">child</span></span> ])
+          <span class="name"><a href="spritewidget/SpriteBox/showOnScreen.html">showOnScreen</a></span><span class="signature">(<wbr>{<span class="parameter" id="showOnScreen-param-descendant"><span class="type-annotation">RenderObject</span> <span class="parameter-name">descendant</span>, </span> <span class="parameter" id="showOnScreen-param-rect"><span class="type-annotation">Rect</span> <span class="parameter-name">rect</span>, </span> <span class="parameter" id="showOnScreen-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span>: <span class="default-value">Duration.zero</span>, </span> <span class="parameter" id="showOnScreen-param-curve"><span class="type-annotation">Curve</span> <span class="parameter-name">curve</span>: <span class="default-value">Curves.ease</span></span> })
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          Attempt to make this or a descendant RenderObject visible on screen. <a href="spritewidget/SpriteBox/showOnScreen.html">[...]</a>
+          Attempt to make (a portion of) this or a descendant <code>RenderObject</code> visible
+on screen. <a href="spritewidget/SpriteBox/showOnScreen.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="toDiagnosticsNode" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr>{<span class="parameter" id="toDiagnosticsNode-param-name"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span>, </span> <span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation">DiagnosticsTreeStyle</span> <span class="parameter-name">style</span></span> })
+          <span class="name"><a href="spritewidget/SpriteBox/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr>{<span class="parameter" id="toDiagnosticsNode-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span>, </span> <span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation">DiagnosticsTreeStyle</span> <span class="parameter-name">style</span></span> })
             <span class="returntype parameter">&#8594; DiagnosticsNode</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          
+          Returns a debug representation of the object that is used by debugging
+tools and by <a href="spritewidget/SpriteBox/toStringDeep.html">toStringDeep</a>. <a href="spritewidget/SpriteBox/toDiagnosticsNode.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="toString" class="callable inherited">
           <span class="name"><a href="spritewidget/SpriteBox/toString.html">toString</a></span><span class="signature">(<wbr>{<span class="parameter" id="toString-param-minLevel"><span class="type-annotation">DiagnosticLevel</span> <span class="parameter-name">minLevel</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+            <span class="returntype parameter">&#8594; String</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          
+          Returns a string representation of this object.
           <div class="features">inherited</div>
 </dd>
         <dt id="toStringDeep" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringDeep-param-prefixLineOne"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixLineOne</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixOtherLines</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation">DiagnosticLevel</span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringDeep-param-prefixLineOne"><span class="type-annotation">String</span> <span class="parameter-name">prefixLineOne</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation">String</span> <span class="parameter-name">prefixOtherLines</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation">DiagnosticLevel</span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; String</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns a description of the tree rooted at this node.
 If the prefix argument is provided, then every line in the output
@@ -1021,10 +1056,10 @@ will be prefixed by that string.
           <div class="features">inherited</div>
 </dd>
         <dt id="toStringShallow" class="callable inherited">
-          <span class="name"><a href="spritewidget/SpriteBox/toStringShallow.html">toStringShallow</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringShallow-param-joiner"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">joiner</span>: <span class="default-value">'; '</span>, </span> <span class="parameter" id="toStringShallow-param-minLevel"><span class="type-annotation">DiagnosticLevel</span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
-            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/toStringShallow.html">toStringShallow</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringShallow-param-joiner"><span class="type-annotation">String</span> <span class="parameter-name">joiner</span>: <span class="default-value">'; '</span>, </span> <span class="parameter" id="toStringShallow-param-minLevel"><span class="type-annotation">DiagnosticLevel</span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; String</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns a one-line detailed description of the render object.
 This description is often somewhat long. <a href="spritewidget/SpriteBox/toStringShallow.html">[...]</a>
@@ -1032,9 +1067,9 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
 </dd>
         <dt id="toStringShort" class="callable inherited">
           <span class="name"><a href="spritewidget/SpriteBox/toStringShort.html">toStringShort</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+            <span class="returntype parameter">&#8594; String</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns a human understandable name.
           <div class="features">inherited</div>
@@ -1043,7 +1078,7 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
           <span class="name"><a href="spritewidget/SpriteBox/visitChildren.html">visitChildren</a></span><span class="signature">(<wbr><span class="parameter" id="visitChildren-param-visitor"><span class="type-annotation">RenderObjectVisitor</span> <span class="parameter-name">visitor</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Calls visitor for each immediate child of this render object. <a href="spritewidget/SpriteBox/visitChildren.html">[...]</a>
           <div class="features">inherited</div>
@@ -1052,7 +1087,7 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
           <span class="name"><a href="spritewidget/SpriteBox/visitChildrenForSemantics.html">visitChildrenForSemantics</a></span><span class="signature">(<wbr><span class="parameter" id="visitChildrenForSemantics-param-visitor"><span class="type-annotation">RenderObjectVisitor</span> <span class="parameter-name">visitor</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Called when collecting the semantics of this node. <a href="spritewidget/SpriteBox/visitChildrenForSemantics.html">[...]</a>
           <div class="features">inherited</div>
@@ -1064,12 +1099,12 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="spritewidget/SpriteBox/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          The equality operator. <a href="dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="spritewidget/SpriteBox/operator_equals.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
       </dl>
@@ -1089,6 +1124,7 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
         <a href="spritewidget/SpriteBox-class.html#instance-properties">Properties</a>
       </li>
       <li><a href="spritewidget/SpriteBox/frameRate.html">frameRate</a></li>
+      <li><a href="spritewidget/SpriteBox/paused.html">paused</a></li>
       <li><a href="spritewidget/SpriteBox/rootNode.html">rootNode</a></li>
       <li><a href="spritewidget/SpriteBox/transformMatrix.html">transformMatrix</a></li>
       <li><a href="spritewidget/SpriteBox/transformMode.html">transformMode</a></li>
@@ -1106,7 +1142,7 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
       <li class="inherited"><a href="spritewidget/SpriteBox/debugNeedsPaint.html">debugNeedsPaint</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/debugSemantics.html">debugSemantics</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/depth.html">depth</a></li>
-      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/hashCode.html">hashCode</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/hasSize.html">hasSize</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/isRepaintBoundary.html">isRepaintBoundary</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/layer.html">layer</a></li>
@@ -1115,7 +1151,7 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
       <li class="inherited"><a href="spritewidget/SpriteBox/paintBounds.html">paintBounds</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/parent.html">parent</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/parentData.html">parentData</a></li>
-      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/runtimeType.html">runtimeType</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/semanticBounds.html">semanticBounds</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/size.html">size</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/sizedByParent.html">sizedByParent</a></li>
@@ -1149,6 +1185,7 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
       <li class="inherited"><a href="spritewidget/SpriteBox/debugRegisterRepaintBoundaryPaint.html">debugRegisterRepaintBoundaryPaint</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/debugResetSize.html">debugResetSize</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/describeApproximatePaintClip.html">describeApproximatePaintClip</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/describeSemanticsClip.html">describeSemanticsClip</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/describeSemanticsConfiguration.html">describeSemanticsConfiguration</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/dropChild.html">dropChild</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a></li>
@@ -1170,7 +1207,7 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
       <li class="inherited"><a href="spritewidget/SpriteBox/markNeedsPaint.html">markNeedsPaint</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/markNeedsSemanticsUpdate.html">markNeedsSemanticsUpdate</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/markParentNeedsLayout.html">markParentNeedsLayout</a></li>
-      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/noSuchMethod.html">noSuchMethod</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/performResize.html">performResize</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/reassemble.html">reassemble</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/redepthChild.html">redepthChild</a></li>
@@ -1180,6 +1217,7 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
       <li class="inherited"><a href="spritewidget/SpriteBox/scheduleInitialLayout.html">scheduleInitialLayout</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/scheduleInitialPaint.html">scheduleInitialPaint</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/scheduleInitialSemantics.html">scheduleInitialSemantics</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/sendSemanticsEvent.html">sendSemanticsEvent</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/setupParentData.html">setupParentData</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/showOnScreen.html">showOnScreen</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
@@ -1191,7 +1229,7 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
       <li class="inherited"><a href="spritewidget/SpriteBox/visitChildrenForSemantics.html">visitChildrenForSemantics</a></li>
     
       <li class="section-title inherited"><a href="spritewidget/SpriteBox-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/operator_equals.html">operator ==</a></li>
     
     
     
@@ -1202,7 +1240,7 @@ This description is often somewhat long. <a href="spritewidget/SpriteBox/toStrin
 
 <footer>
   <span class="no-break">
-    spritewidget 0.9.16
+    spritewidget 0.9.18
   </span>
 
 </footer>

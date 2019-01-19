@@ -81,9 +81,8 @@
     
     
     
+    
       <li class="section-title"><a href="spritewidget/spritewidget-library.html#functions">Functions</a></li>
-      <li><a href="spritewidget/convertDegrees2Radians.html">convertDegrees2Radians</a></li>
-      <li><a href="spritewidget/convertRadians2Degrees.html">convertRadians2Degrees</a></li>
       <li><a href="spritewidget/deserializeBlendMode.html">deserializeBlendMode</a></li>
       <li><a href="spritewidget/deserializeColor.html">deserializeColor</a></li>
       <li><a href="spritewidget/deserializeColorSequence.html">deserializeColorSequence</a></li>
@@ -113,7 +112,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-    <h1>Layer class</h1>
+      <h1>Layer class </h1>
 
     <section class="desc markdown">
       <p>A <a href="spritewidget/Node-class.html">Node</a> that provides an intermediate rendering surface in the sprite
@@ -128,13 +127,13 @@ this can enhance performance.</p>
       <dl class="dl-horizontal">
         <dt>Inheritance</dt>
         <dd><ul class="gt-separated dark clazz-relationships">
-          <li><a href="dart-core/Object-class.html">Object</a></li>
+          <li>Object</li>
           <li><a href="spritewidget/Node-class.html">Node</a></li>
           <li>Layer</li>
         </ul></dd>
 
 
-        <dt>Mixes-in</dt>
+        <dt>Mixed in types</dt>
         <dd><ul class="comma-separated clazz-relationships">
           <li><a href="spritewidget/SpritePaint-class.html">SpritePaint</a></li>
         </ul></dd>
@@ -148,7 +147,7 @@ this can enhance performance.</p>
 
       <dl class="constructor-summary-list">
         <dt id="Layer" class="callable">
-          <span class="name"><a href="spritewidget/Layer/Layer.html">Layer</a></span><span class="signature">([<span class="parameter" id="-param-layerRect"><span class="type-annotation"><a href="dart-ui/Rect-class.html">Rect</a></span> <span class="parameter-name">layerRect</span></span> ])</span>
+          <span class="name"><a href="spritewidget/Layer/Layer.html">Layer</a></span><span class="signature">([<span class="parameter" id="-param-layerRect"><span class="type-annotation">Rect</span> <span class="parameter-name">layerRect</span></span> ])</span>
         </dt>
         <dd>
           Creates a new layer. The layerRect can optionally be passed as an argument
@@ -163,17 +162,17 @@ if it is known. <a href="spritewidget/Layer/Layer.html">[...]</a>
       <dl class="properties">
         <dt id="layerRect" class="property">
           <span class="name"><a href="spritewidget/Layer/layerRect.html">layerRect</a></span>
-          <span class="signature">&#8596; <a href="dart-ui/Rect-class.html">Rect</a></span>
+          <span class="signature">&#8596; Rect</span> 
         </dt>
         <dd>
-          The area that the children of the <code>Layer</code> will occupy. This value is
+          The area that the children of the <a href="spritewidget/Layer-class.html">Layer</a> will occupy. This value is
 treated as a hint to the rendering system and may in some cases be
 ignored. If the area isn't known, the layerRect can be set to <code>null</code>. <a href="spritewidget/Layer/layerRect.html">[...]</a>
           <div class="features">read / write</div>
 </dd>
         <dt id="actions" class="property inherited">
           <span class="name"><a href="spritewidget/Node/actions.html">actions</a></span>
-          <span class="signature">&#8594; <a href="spritewidget/ActionController-class.html">ActionController</a></span>
+          <span class="signature">&#8594; <a href="spritewidget/ActionController-class.html">ActionController</a></span> 
         </dt>
         <dd class="inherited">
           The <a href="spritewidget/ActionController-class.html">ActionController</a> associated with this node. <a href="spritewidget/Node/actions.html">[...]</a>
@@ -181,7 +180,7 @@ ignored. If the area isn't known, the layerRect can be set to <code>null</code>.
 </dd>
         <dt id="children" class="property inherited">
           <span class="name"><a href="spritewidget/Node/children.html">children</a></span>
-          <span class="signature">&#8594; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="spritewidget/Node-class.html">Node</a></span>&gt;</span></span>
+          <span class="signature">&#8594; List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="spritewidget/Node-class.html">Node</a></span>&gt;</span></span> 
         </dt>
         <dd class="inherited">
           A list of the children of this node. <a href="spritewidget/Node/children.html">[...]</a>
@@ -189,7 +188,7 @@ ignored. If the area isn't known, the layerRect can be set to <code>null</code>.
 </dd>
         <dt id="colorOverlay" class="property inherited">
           <span class="name"><a href="spritewidget/SpritePaint/colorOverlay.html">colorOverlay</a></span>
-          <span class="signature">&#8596; <a href="dart-ui/Color-class.html">Color</a></span>
+          <span class="signature">&#8596; Color</span> 
         </dt>
         <dd class="inherited">
           The color to draw on top of the sprite, null if no color overlay is used. <a href="spritewidget/SpritePaint/colorOverlay.html">[...]</a>
@@ -197,32 +196,32 @@ ignored. If the area isn't known, the layerRect can be set to <code>null</code>.
 </dd>
         <dt id="constraints" class="property inherited">
           <span class="name"><a href="spritewidget/Node/constraints.html">constraints</a></span>
-          <span class="signature">&#8596; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="spritewidget/Constraint-class.html">Constraint</a></span>&gt;</span></span>
+          <span class="signature">&#8596; List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="spritewidget/Constraint-class.html">Constraint</a></span>&gt;</span></span> 
         </dt>
         <dd class="inherited">
-          A <a href="dart-core/List-class.html">List</a> of <a href="spritewidget/Constraint-class.html">Constraint</a>s that will be applied to the node.
+          A <code>List</code> of <a href="spritewidget/Constraint-class.html">Constraint</a>s that will be applied to the node.
 The constraints are applied after the <a href="spritewidget/Node/update.html">update</a> method has been called.
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="handleMultiplePointers" class="property inherited">
           <span class="name"><a href="spritewidget/Node/handleMultiplePointers.html">handleMultiplePointers</a></span>
-          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8596; bool</span> 
         </dt>
         <dd class="inherited">
           If set to true the node will receive multiple pointers, otherwise it will only receive events the first pointer. <a href="spritewidget/Node/handleMultiplePointers.html">[...]</a>
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="spritewidget/Node/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span> 
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="spritewidget/Node/hashCode.html">[...]</a>
           <div class="features">read-only, inherited</div>
 </dd>
         <dt id="inverseTransformMatrix" class="property inherited">
           <span class="name"><a href="spritewidget/Node/inverseTransformMatrix.html">inverseTransformMatrix</a></span>
-          <span class="signature">&#8594; Matrix4</span>
+          <span class="signature">&#8594; Matrix4</span> 
         </dt>
         <dd class="inherited">
           The inverse transform matrix used by this node.
@@ -230,7 +229,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="opacity" class="property inherited">
           <span class="name"><a href="spritewidget/SpritePaint/opacity.html">opacity</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
           The opacity of the sprite in the range 0.0 to 1.0. <a href="spritewidget/SpritePaint/opacity.html">[...]</a>
@@ -238,7 +237,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="parent" class="property inherited">
           <span class="name"><a href="spritewidget/Node/parent.html">parent</a></span>
-          <span class="signature">&#8594; <a href="spritewidget/Node-class.html">Node</a></span>
+          <span class="signature">&#8594; <a href="spritewidget/Node-class.html">Node</a></span> 
         </dt>
         <dd class="inherited">
           The parent of this node, or null if it doesn't have a parent. <a href="spritewidget/Node/parent.html">[...]</a>
@@ -246,7 +245,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="paused" class="property inherited">
           <span class="name"><a href="spritewidget/Node/paused.html">paused</a></span>
-          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8596; bool</span> 
         </dt>
         <dd class="inherited">
           Decides if the node and its children is currently paused. <a href="spritewidget/Node/paused.html">[...]</a>
@@ -254,7 +253,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="position" class="property inherited">
           <span class="name"><a href="spritewidget/Node/position.html">position</a></span>
-          <span class="signature">&#8596; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="signature">&#8596; Offset</span> 
         </dt>
         <dd class="inherited">
           The position of this node relative to its parent. <a href="spritewidget/Node/position.html">[...]</a>
@@ -262,15 +261,15 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="rotation" class="property inherited">
           <span class="name"><a href="spritewidget/Node/rotation.html">rotation</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
-          The rotation of this node in degrees. <a href="spritewidget/Node/rotation.html">[...]</a>
+          The rotation of this node in radians. <a href="spritewidget/Node/rotation.html">[...]</a>
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+          <span class="name"><a href="spritewidget/Node/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span> 
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object.
@@ -278,7 +277,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="scale" class="property inherited">
           <span class="name"><a href="spritewidget/Node/scale.html">scale</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
           The scale of this node relative its parent. <a href="spritewidget/Node/scale.html">[...]</a>
@@ -286,7 +285,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="scaleX" class="property inherited">
           <span class="name"><a href="spritewidget/Node/scaleX.html">scaleX</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
           The horizontal scale of this node relative its parent. <a href="spritewidget/Node/scaleX.html">[...]</a>
@@ -294,7 +293,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="scaleY" class="property inherited">
           <span class="name"><a href="spritewidget/Node/scaleY.html">scaleY</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
           The vertical scale of this node relative its parent. <a href="spritewidget/Node/scaleY.html">[...]</a>
@@ -302,23 +301,23 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="skewX" class="property inherited">
           <span class="name"><a href="spritewidget/Node/skewX.html">skewX</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
-          The skew along the x-axis of this node in degrees. <a href="spritewidget/Node/skewX.html">[...]</a>
+          The skew along the x-axis of this node in radians. <a href="spritewidget/Node/skewX.html">[...]</a>
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="skewY" class="property inherited">
           <span class="name"><a href="spritewidget/Node/skewY.html">skewY</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
-          The skew along the y-axis of this node in degrees. <a href="spritewidget/Node/skewY.html">[...]</a>
+          The skew along the y-axis of this node in radians. <a href="spritewidget/Node/skewY.html">[...]</a>
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="spriteBox" class="property inherited">
           <span class="name"><a href="spritewidget/Node/spriteBox.html">spriteBox</a></span>
-          <span class="signature">&#8594; <a href="spritewidget/SpriteBox-class.html">SpriteBox</a></span>
+          <span class="signature">&#8594; <a href="spritewidget/SpriteBox-class.html">SpriteBox</a></span> 
         </dt>
         <dd class="inherited">
           The <a href="spritewidget/SpriteBox-class.html">SpriteBox</a> this node is added to, or null if it's not currently added to a <a href="spritewidget/SpriteBox-class.html">SpriteBox</a>. <a href="spritewidget/Node/spriteBox.html">[...]</a>
@@ -326,7 +325,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="transferMode" class="property inherited">
           <span class="name"><a href="spritewidget/SpritePaint/transferMode.html">transferMode</a></span>
-          <span class="signature">&#8596; <a href="dart-ui/BlendMode-class.html">BlendMode</a></span>
+          <span class="signature">&#8596; BlendMode</span> 
         </dt>
         <dd class="inherited">
           The transfer mode used when drawing the sprite to screen. <a href="spritewidget/SpritePaint/transferMode.html">[...]</a>
@@ -334,7 +333,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="transformMatrix" class="property inherited">
           <span class="name"><a href="spritewidget/Node/transformMatrix.html">transformMatrix</a></span>
-          <span class="signature">&#8594; Matrix4</span>
+          <span class="signature">&#8594; Matrix4</span> 
         </dt>
         <dd class="inherited">
           The transformMatrix describes the transformation from the node's parent. <a href="spritewidget/Node/transformMatrix.html">[...]</a>
@@ -342,7 +341,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="userInteractionEnabled" class="property inherited">
           <span class="name"><a href="spritewidget/Node/userInteractionEnabled.html">userInteractionEnabled</a></span>
-          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8596; bool</span> 
         </dt>
         <dd class="inherited">
           The node will receive user interactions, such as pointer (touch or mouse) events. <a href="spritewidget/Node/userInteractionEnabled.html">[...]</a>
@@ -350,7 +349,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="visible" class="property inherited">
           <span class="name"><a href="spritewidget/Node/visible.html">visible</a></span>
-          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8596; bool</span> 
         </dt>
         <dd class="inherited">
           The visibility of this node and its children.
@@ -358,7 +357,7 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
 </dd>
         <dt id="zPosition" class="property inherited">
           <span class="name"><a href="spritewidget/Node/zPosition.html">zPosition</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
           The draw order of this node compared to its parent and its siblings. <a href="spritewidget/Node/zPosition.html">[...]</a>
@@ -374,16 +373,16 @@ The constraints are applied after the <a href="spritewidget/Node/update.html">up
           <span class="name"><a href="spritewidget/Node/addChild.html">addChild</a></span><span class="signature">(<wbr><span class="parameter" id="addChild-param-child"><span class="type-annotation"><a href="spritewidget/Node-class.html">Node</a></span> <span class="parameter-name">child</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Adds a child to this node. <a href="spritewidget/Node/addChild.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="applyConstraints" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/applyConstraints.html">applyConstraints</a></span><span class="signature">(<wbr><span class="parameter" id="applyConstraints-param-dt"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">dt</span></span>)
+          <span class="name"><a href="spritewidget/Node/applyConstraints.html">applyConstraints</a></span><span class="signature">(<wbr><span class="parameter" id="applyConstraints-param-dt"><span class="type-annotation">double</span> <span class="parameter-name">dt</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Called to apply the <a href="spritewidget/Node/constraints.html">constraints</a> to the node. Normally, this method is
 called automatically by the <a href="spritewidget/SpriteBox-class.html">SpriteBox</a>, but it can be called manually
@@ -394,7 +393,7 @@ if the constraints need to be applied immediately.
           <span class="name"><a href="spritewidget/Node/computeTransformMatrix.html">computeTransformMatrix</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; Matrix4</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Computes the transformation matrix of this node. This method can be
 overriden if a custom matrix is required. There is usually no reason to
@@ -402,37 +401,37 @@ call this method directly.
           <div class="features">inherited</div>
 </dd>
         <dt id="convertPointFromNode" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/convertPointFromNode.html">convertPointFromNode</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointFromNode-param-point"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">point</span>, </span> <span class="parameter" id="convertPointFromNode-param-node"><span class="type-annotation"><a href="spritewidget/Node-class.html">Node</a></span> <span class="parameter-name">node</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="name"><a href="spritewidget/Node/convertPointFromNode.html">convertPointFromNode</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointFromNode-param-point"><span class="type-annotation">Offset</span> <span class="parameter-name">point</span>, </span> <span class="parameter" id="convertPointFromNode-param-node"><span class="type-annotation"><a href="spritewidget/Node-class.html">Node</a></span> <span class="parameter-name">node</span></span>)
+            <span class="returntype parameter">&#8594; Offset</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Converts a <code>point</code> from another <code>node</code>s coordinate system into the local coordinate system of this node. <a href="spritewidget/Node/convertPointFromNode.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="convertPointToBoxSpace" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/convertPointToBoxSpace.html">convertPointToBoxSpace</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointToBoxSpace-param-nodePoint"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">nodePoint</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="name"><a href="spritewidget/Node/convertPointToBoxSpace.html">convertPointToBoxSpace</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointToBoxSpace-param-nodePoint"><span class="type-annotation">Offset</span> <span class="parameter-name">nodePoint</span></span>)
+            <span class="returntype parameter">&#8594; Offset</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Converts a point from the local coordinate system of the node to the coordinate system of the <a href="spritewidget/SpriteBox-class.html">SpriteBox</a>. <a href="spritewidget/Node/convertPointToBoxSpace.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="convertPointToNodeSpace" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/convertPointToNodeSpace.html">convertPointToNodeSpace</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointToNodeSpace-param-boxPoint"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">boxPoint</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="name"><a href="spritewidget/Node/convertPointToNodeSpace.html">convertPointToNodeSpace</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointToNodeSpace-param-boxPoint"><span class="type-annotation">Offset</span> <span class="parameter-name">boxPoint</span></span>)
+            <span class="returntype parameter">&#8594; Offset</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Converts a point from the coordinate system of the <a href="spritewidget/SpriteBox-class.html">SpriteBox</a> to the local coordinate system of the node. <a href="spritewidget/Node/convertPointToNodeSpace.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="handleEvent" class="callable inherited">
           <span class="name"><a href="spritewidget/Node/handleEvent.html">handleEvent</a></span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation"><a href="spritewidget/SpriteBoxEvent-class.html">SpriteBoxEvent</a></span> <span class="parameter-name">event</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Handles an event, such as a pointer (touch or mouse) event. <a href="spritewidget/Node/handleEvent.html">[...]</a>
           <div class="features">inherited</div>
@@ -441,7 +440,7 @@ call this method directly.
           <span class="name"><a href="spritewidget/Node/invalidateTransformMatrix.html">invalidateTransformMatrix</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Invalidates the current transform matrix. If the <a href="spritewidget/Node/computeTransformMatrix.html">computeTransformMatrix</a>
 method is overidden, this method should be called whenever a property
@@ -449,28 +448,28 @@ changes that affects the matrix.
           <div class="features">inherited</div>
 </dd>
         <dt id="isPointInside" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/isPointInside.html">isPointInside</a></span><span class="signature">(<wbr><span class="parameter" id="isPointInside-param-point"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">point</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="spritewidget/Node/isPointInside.html">isPointInside</a></span><span class="signature">(<wbr><span class="parameter" id="isPointInside-param-point"><span class="type-annotation">Offset</span> <span class="parameter-name">point</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns true if the <code>point</code> is inside the node, the <code>point</code> is in the local coordinate system of the node. <a href="spritewidget/Node/isPointInside.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+          <span class="name"><a href="spritewidget/Node/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="spritewidget/Node/noSuchMethod.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="paint" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/paint.html">paint</a></span><span class="signature">(<wbr><span class="parameter" id="paint-param-canvas"><span class="type-annotation"><a href="dart-ui/Canvas-class.html">Canvas</a></span> <span class="parameter-name">canvas</span></span>)
+          <span class="name"><a href="spritewidget/Node/paint.html">paint</a></span><span class="signature">(<wbr><span class="parameter" id="paint-param-canvas"><span class="type-annotation">Canvas</span> <span class="parameter-name">canvas</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Paints this node to the canvas. <a href="spritewidget/Node/paint.html">[...]</a>
           <div class="features">inherited</div>
@@ -479,7 +478,7 @@ changes that affects the matrix.
           <span class="name"><a href="spritewidget/Node/removeAllChildren.html">removeAllChildren</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Removes all children of this node. <a href="spritewidget/Node/removeAllChildren.html">[...]</a>
           <div class="features">inherited</div>
@@ -488,7 +487,7 @@ changes that affects the matrix.
           <span class="name"><a href="spritewidget/Node/removeChild.html">removeChild</a></span><span class="signature">(<wbr><span class="parameter" id="removeChild-param-child"><span class="type-annotation"><a href="spritewidget/Node-class.html">Node</a></span> <span class="parameter-name">child</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Removes a child from this node. <a href="spritewidget/Node/removeChild.html">[...]</a>
           <div class="features">inherited</div>
@@ -497,7 +496,7 @@ changes that affects the matrix.
           <span class="name"><a href="spritewidget/Node/removeFromParent.html">removeFromParent</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Removes this node from its parent node. <a href="spritewidget/Node/removeFromParent.html">[...]</a>
           <div class="features">inherited</div>
@@ -506,25 +505,25 @@ changes that affects the matrix.
           <span class="name"><a href="spritewidget/Node/spriteBoxPerformedLayout.html">spriteBoxPerformedLayout</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Called whenever the <a href="spritewidget/SpriteBox-class.html">SpriteBox</a> is modified or resized, or if the device is rotated. <a href="spritewidget/Node/spriteBoxPerformedLayout.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="toString" class="callable inherited">
-          <span class="name"><a href="dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="spritewidget/Node/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns a string representation of this object.
           <div class="features">inherited</div>
 </dd>
         <dt id="update" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/update.html">update</a></span><span class="signature">(<wbr><span class="parameter" id="update-param-dt"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">dt</span></span>)
+          <span class="name"><a href="spritewidget/Node/update.html">update</a></span><span class="signature">(<wbr><span class="parameter" id="update-param-dt"><span class="type-annotation">double</span> <span class="parameter-name">dt</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Called before a frame is drawn. <a href="spritewidget/Node/update.html">[...]</a>
           <div class="features">inherited</div>
@@ -536,12 +535,12 @@ changes that affects the matrix.
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="spritewidget/Node/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          The equality operator. <a href="dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="spritewidget/Node/operator_equals.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
       </dl>
@@ -566,14 +565,14 @@ changes that affects the matrix.
       <li class="inherited"><a href="spritewidget/SpritePaint/colorOverlay.html">colorOverlay</a></li>
       <li class="inherited"><a href="spritewidget/Node/constraints.html">constraints</a></li>
       <li class="inherited"><a href="spritewidget/Node/handleMultiplePointers.html">handleMultiplePointers</a></li>
-      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="spritewidget/Node/hashCode.html">hashCode</a></li>
       <li class="inherited"><a href="spritewidget/Node/inverseTransformMatrix.html">inverseTransformMatrix</a></li>
       <li class="inherited"><a href="spritewidget/SpritePaint/opacity.html">opacity</a></li>
       <li class="inherited"><a href="spritewidget/Node/parent.html">parent</a></li>
       <li class="inherited"><a href="spritewidget/Node/paused.html">paused</a></li>
       <li class="inherited"><a href="spritewidget/Node/position.html">position</a></li>
       <li class="inherited"><a href="spritewidget/Node/rotation.html">rotation</a></li>
-      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="spritewidget/Node/runtimeType.html">runtimeType</a></li>
       <li class="inherited"><a href="spritewidget/Node/scale.html">scale</a></li>
       <li class="inherited"><a href="spritewidget/Node/scaleX.html">scaleX</a></li>
       <li class="inherited"><a href="spritewidget/Node/scaleY.html">scaleY</a></li>
@@ -596,17 +595,17 @@ changes that affects the matrix.
       <li class="inherited"><a href="spritewidget/Node/handleEvent.html">handleEvent</a></li>
       <li class="inherited"><a href="spritewidget/Node/invalidateTransformMatrix.html">invalidateTransformMatrix</a></li>
       <li class="inherited"><a href="spritewidget/Node/isPointInside.html">isPointInside</a></li>
-      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="spritewidget/Node/noSuchMethod.html">noSuchMethod</a></li>
       <li class="inherited"><a href="spritewidget/Node/paint.html">paint</a></li>
       <li class="inherited"><a href="spritewidget/Node/removeAllChildren.html">removeAllChildren</a></li>
       <li class="inherited"><a href="spritewidget/Node/removeChild.html">removeChild</a></li>
       <li class="inherited"><a href="spritewidget/Node/removeFromParent.html">removeFromParent</a></li>
       <li class="inherited"><a href="spritewidget/Node/spriteBoxPerformedLayout.html">spriteBoxPerformedLayout</a></li>
-      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="spritewidget/Node/toString.html">toString</a></li>
       <li class="inherited"><a href="spritewidget/Node/update.html">update</a></li>
     
       <li class="section-title inherited"><a href="spritewidget/Layer-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="spritewidget/Node/operator_equals.html">operator ==</a></li>
     
     
     
@@ -617,7 +616,7 @@ changes that affects the matrix.
 
 <footer>
   <span class="no-break">
-    spritewidget 0.9.16
+    spritewidget 0.9.18
   </span>
 
 </footer>

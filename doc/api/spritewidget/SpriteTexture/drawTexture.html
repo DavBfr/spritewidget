@@ -53,17 +53,17 @@
       <li><a href="spritewidget/SpriteTexture/size.html">size</a></li>
       <li><a href="spritewidget/SpriteTexture/spriteSourceSize.html">spriteSourceSize</a></li>
       <li><a href="spritewidget/SpriteTexture/trimmed.html">trimmed</a></li>
-      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
-      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteTexture/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteTexture/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="spritewidget/SpriteTexture-class.html#instance-methods">Methods</a></li>
       <li><a href="spritewidget/SpriteTexture/drawTexture.html">drawTexture</a></li>
       <li><a href="spritewidget/SpriteTexture/textureFromRect.html">textureFromRect</a></li>
-      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteTexture/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteTexture/toString.html">toString</a></li>
     
       <li class="section-title inherited"><a href="spritewidget/SpriteTexture-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteTexture/operator_equals.html">operator ==</a></li>
     
     
     
@@ -76,10 +76,11 @@
     <section class="multi-line-signature">
       <span class="returntype">void</span>
       <span class="name ">drawTexture</span>
-(<wbr><span class="parameter" id="drawTexture-param-canvas"><span class="type-annotation"><a href="dart-ui/Canvas-class.html">Canvas</a></span> <span class="parameter-name">canvas</span>, </span> <span class="parameter" id="drawTexture-param-position"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">position</span>, </span> <span class="parameter" id="drawTexture-param-paint"><span class="type-annotation"><a href="dart-ui/Paint-class.html">Paint</a></span> <span class="parameter-name">paint</span></span>)
+(<wbr><span class="parameter" id="drawTexture-param-canvas"><span class="type-annotation">Canvas</span> <span class="parameter-name">canvas</span>, </span> <span class="parameter" id="drawTexture-param-position"><span class="type-annotation">Offset</span> <span class="parameter-name">position</span>, </span> <span class="parameter" id="drawTexture-param-paint"><span class="type-annotation">Paint</span> <span class="parameter-name">paint</span></span>)
+      
     </section>
     <section class="desc markdown">
-      <p>Draws the texture to a <a href="dart-ui/Canvas-class.html">Canvas</a> at a specified <code>position</code> and with the
+      <p>Draws the texture to a <code>Canvas</code> at a specified <code>position</code> and with the
 specified <code>paint</code>.</p>
     </section>
     
@@ -107,9 +108,9 @@ specified <code>paint</code>.</p>
     Rect rotatedSpriteSourceSize = rotatedSpriteSourcePoint &amp; new Size(originalFrameSize.height, originalFrameSize.width);
 
     &#47;&#47; Draw the rotated sprite
-    canvas.rotate(-math.PI&#47;2.0);
+    canvas.rotate(-math.pi&#47;2.0);
     canvas.drawImageRect(image, rotatedFrame, rotatedSpriteSourceSize, paint);
-    canvas.rotate(math.PI&#47;2.0);
+    canvas.rotate(math.pi&#47;2.0);
 
     &#47;&#47; Translate back
     if (translate) {
@@ -132,7 +133,7 @@ specified <code>paint</code>.</p>
 
 <footer>
   <span class="no-break">
-    spritewidget 0.9.16
+    spritewidget 0.9.18
   </span>
 
 </footer>

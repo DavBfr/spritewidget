@@ -46,6 +46,7 @@
         <a href="spritewidget/SpriteBox-class.html#instance-properties">Properties</a>
       </li>
       <li><a href="spritewidget/SpriteBox/frameRate.html">frameRate</a></li>
+      <li><a href="spritewidget/SpriteBox/paused.html">paused</a></li>
       <li><a href="spritewidget/SpriteBox/rootNode.html">rootNode</a></li>
       <li><a href="spritewidget/SpriteBox/transformMatrix.html">transformMatrix</a></li>
       <li><a href="spritewidget/SpriteBox/transformMode.html">transformMode</a></li>
@@ -63,7 +64,7 @@
       <li class="inherited"><a href="spritewidget/SpriteBox/debugNeedsPaint.html">debugNeedsPaint</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/debugSemantics.html">debugSemantics</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/depth.html">depth</a></li>
-      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/hashCode.html">hashCode</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/hasSize.html">hasSize</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/isRepaintBoundary.html">isRepaintBoundary</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/layer.html">layer</a></li>
@@ -72,7 +73,7 @@
       <li class="inherited"><a href="spritewidget/SpriteBox/paintBounds.html">paintBounds</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/parent.html">parent</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/parentData.html">parentData</a></li>
-      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/runtimeType.html">runtimeType</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/semanticBounds.html">semanticBounds</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/size.html">size</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/sizedByParent.html">sizedByParent</a></li>
@@ -106,6 +107,7 @@
       <li class="inherited"><a href="spritewidget/SpriteBox/debugRegisterRepaintBoundaryPaint.html">debugRegisterRepaintBoundaryPaint</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/debugResetSize.html">debugResetSize</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/describeApproximatePaintClip.html">describeApproximatePaintClip</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/describeSemanticsClip.html">describeSemanticsClip</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/describeSemanticsConfiguration.html">describeSemanticsConfiguration</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/dropChild.html">dropChild</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a></li>
@@ -127,7 +129,7 @@
       <li class="inherited"><a href="spritewidget/SpriteBox/markNeedsPaint.html">markNeedsPaint</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/markNeedsSemanticsUpdate.html">markNeedsSemanticsUpdate</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/markParentNeedsLayout.html">markParentNeedsLayout</a></li>
-      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/noSuchMethod.html">noSuchMethod</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/performResize.html">performResize</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/reassemble.html">reassemble</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/redepthChild.html">redepthChild</a></li>
@@ -137,6 +139,7 @@
       <li class="inherited"><a href="spritewidget/SpriteBox/scheduleInitialLayout.html">scheduleInitialLayout</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/scheduleInitialPaint.html">scheduleInitialPaint</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/scheduleInitialSemantics.html">scheduleInitialSemantics</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/sendSemanticsEvent.html">sendSemanticsEvent</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/setupParentData.html">setupParentData</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/showOnScreen.html">showOnScreen</a></li>
       <li class="inherited"><a href="spritewidget/SpriteBox/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
@@ -148,7 +151,7 @@
       <li class="inherited"><a href="spritewidget/SpriteBox/visitChildrenForSemantics.html">visitChildrenForSemantics</a></li>
     
       <li class="section-title inherited"><a href="spritewidget/SpriteBox-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="spritewidget/SpriteBox/operator_equals.html">operator ==</a></li>
     
     
     
@@ -159,21 +162,22 @@
     <h1>debugAdoptSize method</h1>
 
     <section class="multi-line-signature">
-      <span class="returntype"><a href="dart-ui/Size-class.html">Size</a></span>
+      <span class="returntype">Size</span>
       <span class="name ">debugAdoptSize</span>
-(<wbr><span class="parameter" id="debugAdoptSize-param-value"><span class="type-annotation"><a href="dart-ui/Size-class.html">Size</a></span> <span class="parameter-name">value</span></span>)
+(<wbr><span class="parameter" id="debugAdoptSize-param-value"><span class="type-annotation">Size</span> <span class="parameter-name">value</span></span>)
+      <div class="features">inherited</div>
     </section>
     <section class="desc markdown">
-      <p>Claims ownership of the given <a href="dart-ui/Size-class.html">Size</a>.</p>
-<p>In debug mode, the <code>RenderBox</code> class verifies that <a href="dart-ui/Size-class.html">Size</a> objects obtained
+      <p>Claims ownership of the given <code>Size</code>.</p>
+<p>In debug mode, the <code>RenderBox</code> class verifies that <code>Size</code> objects obtained
 from other <code>RenderBox</code> objects are only used according to the semantics of
-the <code>RenderBox</code> protocol, namely that a <a href="dart-ui/Size-class.html">Size</a> from a <code>RenderBox</code> can only
+the <code>RenderBox</code> protocol, namely that a <code>Size</code> from a <code>RenderBox</code> can only
 be used by its parent, and then only if <code>parentUsesSize</code> was set.</p>
-<p>Sometimes, a <a href="dart-ui/Size-class.html">Size</a> that can validly be used ends up no longer being valid
-over time. The common example is a <a href="dart-ui/Size-class.html">Size</a> taken from a child that is later
+<p>Sometimes, a <code>Size</code> that can validly be used ends up no longer being valid
+over time. The common example is a <code>Size</code> taken from a child that is later
 removed from the parent. In such cases, this method can be called to first
 check whether the size can legitimately be used, and if so, to then create
-a new <a href="dart-ui/Size-class.html">Size</a> that can be used going forward, regardless of what happens to
+a new <code>Size</code> that can be used going forward, regardless of what happens to
 the original owner.</p>
     </section>
     
@@ -185,7 +189,7 @@ the original owner.</p>
     if (value is _DebugSize) {
       if (value._owner != this) {
         if (value._owner.parent != this) {
-          throw new FlutterError(
+          throw FlutterError(
             &#39;The size property was assigned a size inappropriately.\n&#39;
             &#39;The following render object:\n&#39;
             &#39;  $this\n&#39;
@@ -207,7 +211,7 @@ the original owner.</p>
           );
         }
         if (!value._canBeUsedByParent) {
-          throw new FlutterError(
+          throw FlutterError(
             &#39;A child\&#39;s size was used without setting parentUsesSize.\n&#39;
             &#39;The following render object:\n&#39;
             &#39;  $this\n&#39;
@@ -223,7 +227,7 @@ the original owner.</p>
         }
       }
     }
-    result = new _DebugSize(value, this, debugCanParentUseSize);
+    result = _DebugSize(value, this, debugCanParentUseSize);
     return true;
   }());
   return result;
@@ -239,7 +243,7 @@ the original owner.</p>
 
 <footer>
   <span class="no-break">
-    spritewidget 0.9.16
+    spritewidget 0.9.18
   </span>
 
 </footer>

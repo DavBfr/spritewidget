@@ -81,9 +81,8 @@
     
     
     
+    
       <li class="section-title"><a href="spritewidget/spritewidget-library.html#functions">Functions</a></li>
-      <li><a href="spritewidget/convertDegrees2Radians.html">convertDegrees2Radians</a></li>
-      <li><a href="spritewidget/convertRadians2Degrees.html">convertRadians2Degrees</a></li>
       <li><a href="spritewidget/deserializeBlendMode.html">deserializeBlendMode</a></li>
       <li><a href="spritewidget/deserializeColor.html">deserializeColor</a></li>
       <li><a href="spritewidget/deserializeColorSequence.html">deserializeColorSequence</a></li>
@@ -113,7 +112,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-    <h1>ParticleSystem class</h1>
+      <h1>ParticleSystem class </h1>
 
     <section class="desc markdown">
       <p>A particle system uses a large number of sprites to draw complex effects
@@ -131,7 +130,7 @@ number of particles can never exceed the <a href="spritewidget/ParticleSystem/ma
       <dl class="dl-horizontal">
         <dt>Inheritance</dt>
         <dd><ul class="gt-separated dark clazz-relationships">
-          <li><a href="dart-core/Object-class.html">Object</a></li>
+          <li>Object</li>
           <li><a href="spritewidget/Node-class.html">Node</a></li>
           <li>ParticleSystem</li>
         </ul></dd>
@@ -147,7 +146,7 @@ number of particles can never exceed the <a href="spritewidget/ParticleSystem/ma
 
       <dl class="constructor-summary-list">
         <dt id="ParticleSystem" class="callable">
-          <span class="name"><a href="spritewidget/ParticleSystem/ParticleSystem.html">ParticleSystem</a></span><span class="signature">(<span class="parameter" id="-param-texture"><span class="type-annotation"><a href="spritewidget/SpriteTexture-class.html">SpriteTexture</a></span> <span class="parameter-name">texture</span>, {</span> <span class="parameter" id="-param-life"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">life</span>: <span class="default-value">1.5</span>, </span> <span class="parameter" id="-param-lifeVar"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">lifeVar</span>: <span class="default-value">1.0</span>, </span> <span class="parameter" id="-param-posVar"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">posVar</span>: <span class="default-value">Offset.zero</span>, </span> <span class="parameter" id="-param-startSize"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">startSize</span>: <span class="default-value">2.5</span>, </span> <span class="parameter" id="-param-startSizeVar"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">startSizeVar</span>: <span class="default-value">0.5</span>, </span> <span class="parameter" id="-param-endSize"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">endSize</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-endSizeVar"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">endSizeVar</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-startRotation"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">startRotation</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-startRotationVar"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">startRotationVar</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-endRotation"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">endRotation</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-endRotationVar"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">endRotationVar</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-rotateToMovement"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">rotateToMovement</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-direction"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">direction</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-directionVar"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">directionVar</span>: <span class="default-value">360.0</span>, </span> <span class="parameter" id="-param-speed"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">speed</span>: <span class="default-value">100.0</span>, </span> <span class="parameter" id="-param-speedVar"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">speedVar</span>: <span class="default-value">50.0</span>, </span> <span class="parameter" id="-param-radialAcceleration"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">radialAcceleration</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-radialAccelerationVar"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">radialAccelerationVar</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-tangentialAcceleration"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">tangentialAcceleration</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-tangentialAccelerationVar"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">tangentialAccelerationVar</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-maxParticles"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">maxParticles</span>: <span class="default-value">100</span>, </span> <span class="parameter" id="-param-emissionRate"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">emissionRate</span>: <span class="default-value">50.0</span>, </span> <span class="parameter" id="-param-colorSequence"><span class="type-annotation"><a href="spritewidget/ColorSequence-class.html">ColorSequence</a></span> <span class="parameter-name">colorSequence</span>, </span> <span class="parameter" id="-param-alphaVar"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">alphaVar</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-redVar"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">redVar</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-greenVar"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">greenVar</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-blueVar"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">blueVar</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-transferMode"><span class="type-annotation"><a href="dart-ui/BlendMode-class.html">BlendMode</a></span> <span class="parameter-name">transferMode</span>: <span class="default-value">BlendMode.plus</span>, </span> <span class="parameter" id="-param-numParticlesToEmit"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">numParticlesToEmit</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-autoRemoveOnFinish"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">autoRemoveOnFinish</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-gravity"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">gravity</span>, </span> <span class="parameter" id="-param-data"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">data</span></span> })</span>
+          <span class="name"><a href="spritewidget/ParticleSystem/ParticleSystem.html">ParticleSystem</a></span><span class="signature">(<span class="parameter" id="-param-texture"><span class="type-annotation"><a href="spritewidget/SpriteTexture-class.html">SpriteTexture</a></span> <span class="parameter-name">texture</span>, {</span> <span class="parameter" id="-param-life"><span class="type-annotation">double</span> <span class="parameter-name">life</span>: <span class="default-value">1.5</span>, </span> <span class="parameter" id="-param-lifeVar"><span class="type-annotation">double</span> <span class="parameter-name">lifeVar</span>: <span class="default-value">1.0</span>, </span> <span class="parameter" id="-param-posVar"><span class="type-annotation">Offset</span> <span class="parameter-name">posVar</span>: <span class="default-value">Offset.zero</span>, </span> <span class="parameter" id="-param-startSize"><span class="type-annotation">double</span> <span class="parameter-name">startSize</span>: <span class="default-value">2.5</span>, </span> <span class="parameter" id="-param-startSizeVar"><span class="type-annotation">double</span> <span class="parameter-name">startSizeVar</span>: <span class="default-value">0.5</span>, </span> <span class="parameter" id="-param-endSize"><span class="type-annotation">double</span> <span class="parameter-name">endSize</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-endSizeVar"><span class="type-annotation">double</span> <span class="parameter-name">endSizeVar</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-startRotation"><span class="type-annotation">double</span> <span class="parameter-name">startRotation</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-startRotationVar"><span class="type-annotation">double</span> <span class="parameter-name">startRotationVar</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-endRotation"><span class="type-annotation">double</span> <span class="parameter-name">endRotation</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-endRotationVar"><span class="type-annotation">double</span> <span class="parameter-name">endRotationVar</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-rotateToMovement"><span class="type-annotation">bool</span> <span class="parameter-name">rotateToMovement</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-direction"><span class="type-annotation">double</span> <span class="parameter-name">direction</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-directionVar"><span class="type-annotation">double</span> <span class="parameter-name">directionVar</span>: <span class="default-value">360.0</span>, </span> <span class="parameter" id="-param-speed"><span class="type-annotation">double</span> <span class="parameter-name">speed</span>: <span class="default-value">100.0</span>, </span> <span class="parameter" id="-param-speedVar"><span class="type-annotation">double</span> <span class="parameter-name">speedVar</span>: <span class="default-value">50.0</span>, </span> <span class="parameter" id="-param-radialAcceleration"><span class="type-annotation">double</span> <span class="parameter-name">radialAcceleration</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-radialAccelerationVar"><span class="type-annotation">double</span> <span class="parameter-name">radialAccelerationVar</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-tangentialAcceleration"><span class="type-annotation">double</span> <span class="parameter-name">tangentialAcceleration</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-tangentialAccelerationVar"><span class="type-annotation">double</span> <span class="parameter-name">tangentialAccelerationVar</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-maxParticles"><span class="type-annotation">int</span> <span class="parameter-name">maxParticles</span>: <span class="default-value">100</span>, </span> <span class="parameter" id="-param-emissionRate"><span class="type-annotation">double</span> <span class="parameter-name">emissionRate</span>: <span class="default-value">50.0</span>, </span> <span class="parameter" id="-param-colorSequence"><span class="type-annotation"><a href="spritewidget/ColorSequence-class.html">ColorSequence</a></span> <span class="parameter-name">colorSequence</span>, </span> <span class="parameter" id="-param-alphaVar"><span class="type-annotation">int</span> <span class="parameter-name">alphaVar</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-redVar"><span class="type-annotation">int</span> <span class="parameter-name">redVar</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-greenVar"><span class="type-annotation">int</span> <span class="parameter-name">greenVar</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-blueVar"><span class="type-annotation">int</span> <span class="parameter-name">blueVar</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-transferMode"><span class="type-annotation">BlendMode</span> <span class="parameter-name">transferMode</span>: <span class="default-value">BlendMode.plus</span>, </span> <span class="parameter" id="-param-numParticlesToEmit"><span class="type-annotation">int</span> <span class="parameter-name">numParticlesToEmit</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="-param-autoRemoveOnFinish"><span class="type-annotation">bool</span> <span class="parameter-name">autoRemoveOnFinish</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-gravity"><span class="type-annotation">Offset</span> <span class="parameter-name">gravity</span>, </span> <span class="parameter" id="-param-data"><span class="type-annotation">String</span> <span class="parameter-name">data</span></span> })</span>
         </dt>
         <dd>
           Creates a new particle system with the given properties. The only
@@ -162,15 +161,15 @@ required parameter is the texture, all other parameters are optional.
       <dl class="properties">
         <dt id="alphaVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/alphaVar.html">alphaVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8596; int</span> 
         </dt>
         <dd>
-          Alpha varience of the <code>colorSequence</code> property.
+          Alpha varience of the <a href="spritewidget/ParticleSystem/colorSequence.html">colorSequence</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="autoRemoveOnFinish" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/autoRemoveOnFinish.html">autoRemoveOnFinish</a></span>
-          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8596; bool</span> 
         </dt>
         <dd>
           If set to true, the particle system will be automatically removed as soon
@@ -179,42 +178,42 @@ as there are no more particles left to draw.
 </dd>
         <dt id="blueVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/blueVar.html">blueVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8596; int</span> 
         </dt>
         <dd>
-          Blue varience of the <code>colorSequence</code> property.
+          Blue varience of the <a href="spritewidget/ParticleSystem/colorSequence.html">colorSequence</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="colorSequence" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/colorSequence.html">colorSequence</a></span>
-          <span class="signature">&#8596; <a href="spritewidget/ColorSequence-class.html">ColorSequence</a></span>
+          <span class="signature">&#8596; <a href="spritewidget/ColorSequence-class.html">ColorSequence</a></span> 
         </dt>
         <dd>
-          The <code>ColorSequence</code> used to animate the color of each individual particle
-over the duration of its <code>life</code>. When applied to a particle the sequence's
-color stops modified in accordance with the <code>alphaVar</code>, <code>redVar</code>,
-<code>greenVar</code>, and <code>blueVar</code> properties.
+          The <a href="spritewidget/ColorSequence-class.html">ColorSequence</a> used to animate the color of each individual particle
+over the duration of its <a href="spritewidget/ParticleSystem/life.html">life</a>. When applied to a particle the sequence's
+color stops modified in accordance with the <a href="spritewidget/ParticleSystem/alphaVar.html">alphaVar</a>, <a href="spritewidget/ParticleSystem/redVar.html">redVar</a>,
+<a href="spritewidget/ParticleSystem/greenVar.html">greenVar</a>, and <a href="spritewidget/ParticleSystem/blueVar.html">blueVar</a> properties.
           <div class="features">read / write</div>
 </dd>
         <dt id="direction" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/direction.html">direction</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
-          The direction in which each particle will be emitted in degrees.
+          The direction in which each particle will be emitted in radians.
           <div class="features">read / write</div>
 </dd>
         <dt id="directionVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/directionVar.html">directionVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
-          Variance of the <code>direction</code> property.
+          Variance of the <a href="spritewidget/ParticleSystem/direction.html">direction</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="emissionRate" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/emissionRate.html">emissionRate</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
           The rate at which particles are emitted, defined in particles per second.
@@ -222,7 +221,7 @@ color stops modified in accordance with the <code>alphaVar</code>, <code>redVar<
 </dd>
         <dt id="endRotation" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/endRotation.html">endRotation</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
           The end rotation of each individual particle.
@@ -230,15 +229,15 @@ color stops modified in accordance with the <code>alphaVar</code>, <code>redVar<
 </dd>
         <dt id="endRotationVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/endRotationVar.html">endRotationVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
-          Variance of the <code>endRotation</code> property.
+          Variance of the <a href="spritewidget/ParticleSystem/endRotation.html">endRotation</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="endSize" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/endSize.html">endSize</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
           The end scale of each individual particle.
@@ -246,15 +245,15 @@ color stops modified in accordance with the <code>alphaVar</code>, <code>redVar<
 </dd>
         <dt id="endSizeVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/endSizeVar.html">endSizeVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
-          Variance of the <code>endSize</code> property.
+          Variance of the <a href="spritewidget/ParticleSystem/endSize.html">endSize</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="gravity" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/gravity.html">gravity</a></span>
-          <span class="signature">&#8596; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="signature">&#8596; Offset</span> 
         </dt>
         <dd>
           The gravity vector of the particle system.
@@ -262,15 +261,15 @@ color stops modified in accordance with the <code>alphaVar</code>, <code>redVar<
 </dd>
         <dt id="greenVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/greenVar.html">greenVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8596; int</span> 
         </dt>
         <dd>
-          Green varience of the <code>colorSequence</code> property.
+          Green varience of the <a href="spritewidget/ParticleSystem/colorSequence.html">colorSequence</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="insertionOffset" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/insertionOffset.html">insertionOffset</a></span>
-          <span class="signature">&#8596; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="signature">&#8596; Offset</span> 
         </dt>
         <dd>
           Offset of where the particles are inserted, this is useful for doing
@@ -280,7 +279,7 @@ trailing a rocket).
 </dd>
         <dt id="life" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/life.html">life</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
           The time in seconds each particle will be alive.
@@ -288,15 +287,15 @@ trailing a rocket).
 </dd>
         <dt id="lifeVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/lifeVar.html">lifeVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
-          Variance of the <code>life</code> property.
+          Variance of the <a href="spritewidget/ParticleSystem/life.html">life</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="maxParticles" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/maxParticles.html">maxParticles</a></span>
-          <span class="signature">&#8596; <a href="dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8596; int</span> 
         </dt>
         <dd>
           The maximum number of particles the system can display at a single time.
@@ -304,7 +303,7 @@ trailing a rocket).
 </dd>
         <dt id="numParticlesToEmit" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/numParticlesToEmit.html">numParticlesToEmit</a></span>
-          <span class="signature">&#8596; <a href="dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8596; int</span> 
         </dt>
         <dd>
           Total number of particles to emit, if the value is set to 0 the system
@@ -313,7 +312,7 @@ will continue to emit particles for an indifinte period of time.
 </dd>
         <dt id="opacity" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/opacity.html">opacity</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
           The over all opacity of the particle system. This value is multiplied by
@@ -322,7 +321,7 @@ the opacity of the individual particles.
 </dd>
         <dt id="posVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/posVar.html">posVar</a></span>
-          <span class="signature">&#8596; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="signature">&#8596; Offset</span> 
         </dt>
         <dd>
           The variance of a particles initial position.
@@ -330,7 +329,7 @@ the opacity of the individual particles.
 </dd>
         <dt id="radialAcceleration" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/radialAcceleration.html">radialAcceleration</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
           The radial acceleration of each induvidual particle.
@@ -338,34 +337,34 @@ the opacity of the individual particles.
 </dd>
         <dt id="radialAccelerationVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/radialAccelerationVar.html">radialAccelerationVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
-          Variance of the <code>radialAcceleration</code> property.
+          Variance of the <a href="spritewidget/ParticleSystem/radialAcceleration.html">radialAcceleration</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="redVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/redVar.html">redVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8596; int</span> 
         </dt>
         <dd>
-          Red varience of the <code>colorSequence</code> property.
+          Red varience of the <a href="spritewidget/ParticleSystem/colorSequence.html">colorSequence</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="rotateToMovement" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/rotateToMovement.html">rotateToMovement</a></span>
-          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8596; bool</span> 
         </dt>
         <dd>
           If true, each particle will be rotated to the direction of the movement
 of the particle. The calculated rotation will be added to the current
-rotation as calculated by the <code>startRotation</code> and <code>endRotation</code>
+rotation as calculated by the <a href="spritewidget/ParticleSystem/startRotation.html">startRotation</a> and <a href="spritewidget/ParticleSystem/endRotation.html">endRotation</a>
 properties.
           <div class="features">read / write</div>
 </dd>
         <dt id="speed" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/speed.html">speed</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
           The speed at which each particle will be emitted.
@@ -373,15 +372,15 @@ properties.
 </dd>
         <dt id="speedVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/speedVar.html">speedVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
-          Variance of the <code>direction</code> property.
+          Variance of the <a href="spritewidget/ParticleSystem/direction.html">direction</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="startRotation" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/startRotation.html">startRotation</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
           The start rotation of each individual particle.
@@ -389,15 +388,15 @@ properties.
 </dd>
         <dt id="startRotationVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/startRotationVar.html">startRotationVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
-          Variance of the <code>startRotation</code> property.
+          Variance of the <a href="spritewidget/ParticleSystem/startRotation.html">startRotation</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="startSize" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/startSize.html">startSize</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
           The start scale of each individual particle.
@@ -405,15 +404,15 @@ properties.
 </dd>
         <dt id="startSizeVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/startSizeVar.html">startSizeVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
-          Variance of the <code>startSize</code> property.
+          Variance of the <a href="spritewidget/ParticleSystem/startSize.html">startSize</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="tangentialAcceleration" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/tangentialAcceleration.html">tangentialAcceleration</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
           The tangential acceleration of each individual particle.
@@ -421,15 +420,15 @@ properties.
 </dd>
         <dt id="tangentialAccelerationVar" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/tangentialAccelerationVar.html">tangentialAccelerationVar</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd>
-          Variance of the <code>tangentialAcceleration</code> property.
+          Variance of the <a href="spritewidget/ParticleSystem/tangentialAcceleration.html">tangentialAcceleration</a> property.
           <div class="features">read / write</div>
 </dd>
         <dt id="texture" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/texture.html">texture</a></span>
-          <span class="signature">&#8596; <a href="spritewidget/SpriteTexture-class.html">SpriteTexture</a></span>
+          <span class="signature">&#8596; <a href="spritewidget/SpriteTexture-class.html">SpriteTexture</a></span> 
         </dt>
         <dd>
           The texture used to draw each individual sprite.
@@ -437,7 +436,7 @@ properties.
 </dd>
         <dt id="transferMode" class="property">
           <span class="name"><a href="spritewidget/ParticleSystem/transferMode.html">transferMode</a></span>
-          <span class="signature">&#8596; <a href="dart-ui/BlendMode-class.html">BlendMode</a></span>
+          <span class="signature">&#8596; BlendMode</span> 
         </dt>
         <dd>
           The transfer mode used to draw the particle system. Default is
@@ -446,7 +445,7 @@ properties.
 </dd>
         <dt id="actions" class="property inherited">
           <span class="name"><a href="spritewidget/Node/actions.html">actions</a></span>
-          <span class="signature">&#8594; <a href="spritewidget/ActionController-class.html">ActionController</a></span>
+          <span class="signature">&#8594; <a href="spritewidget/ActionController-class.html">ActionController</a></span> 
         </dt>
         <dd class="inherited">
           The <a href="spritewidget/ActionController-class.html">ActionController</a> associated with this node. <a href="spritewidget/Node/actions.html">[...]</a>
@@ -454,7 +453,7 @@ properties.
 </dd>
         <dt id="children" class="property inherited">
           <span class="name"><a href="spritewidget/Node/children.html">children</a></span>
-          <span class="signature">&#8594; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="spritewidget/Node-class.html">Node</a></span>&gt;</span></span>
+          <span class="signature">&#8594; List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="spritewidget/Node-class.html">Node</a></span>&gt;</span></span> 
         </dt>
         <dd class="inherited">
           A list of the children of this node. <a href="spritewidget/Node/children.html">[...]</a>
@@ -462,32 +461,32 @@ properties.
 </dd>
         <dt id="constraints" class="property inherited">
           <span class="name"><a href="spritewidget/Node/constraints.html">constraints</a></span>
-          <span class="signature">&#8596; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="spritewidget/Constraint-class.html">Constraint</a></span>&gt;</span></span>
+          <span class="signature">&#8596; List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="spritewidget/Constraint-class.html">Constraint</a></span>&gt;</span></span> 
         </dt>
         <dd class="inherited">
-          A <a href="dart-core/List-class.html">List</a> of <a href="spritewidget/Constraint-class.html">Constraint</a>s that will be applied to the node.
+          A <code>List</code> of <a href="spritewidget/Constraint-class.html">Constraint</a>s that will be applied to the node.
 The constraints are applied after the <a href="spritewidget/ParticleSystem/update.html">update</a> method has been called.
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="handleMultiplePointers" class="property inherited">
           <span class="name"><a href="spritewidget/Node/handleMultiplePointers.html">handleMultiplePointers</a></span>
-          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8596; bool</span> 
         </dt>
         <dd class="inherited">
           If set to true the node will receive multiple pointers, otherwise it will only receive events the first pointer. <a href="spritewidget/Node/handleMultiplePointers.html">[...]</a>
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="spritewidget/Node/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span> 
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="spritewidget/Node/hashCode.html">[...]</a>
           <div class="features">read-only, inherited</div>
 </dd>
         <dt id="inverseTransformMatrix" class="property inherited">
           <span class="name"><a href="spritewidget/Node/inverseTransformMatrix.html">inverseTransformMatrix</a></span>
-          <span class="signature">&#8594; Matrix4</span>
+          <span class="signature">&#8594; Matrix4</span> 
         </dt>
         <dd class="inherited">
           The inverse transform matrix used by this node.
@@ -495,7 +494,7 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="parent" class="property inherited">
           <span class="name"><a href="spritewidget/Node/parent.html">parent</a></span>
-          <span class="signature">&#8594; <a href="spritewidget/Node-class.html">Node</a></span>
+          <span class="signature">&#8594; <a href="spritewidget/Node-class.html">Node</a></span> 
         </dt>
         <dd class="inherited">
           The parent of this node, or null if it doesn't have a parent. <a href="spritewidget/Node/parent.html">[...]</a>
@@ -503,7 +502,7 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="paused" class="property inherited">
           <span class="name"><a href="spritewidget/Node/paused.html">paused</a></span>
-          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8596; bool</span> 
         </dt>
         <dd class="inherited">
           Decides if the node and its children is currently paused. <a href="spritewidget/Node/paused.html">[...]</a>
@@ -511,7 +510,7 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="position" class="property inherited">
           <span class="name"><a href="spritewidget/Node/position.html">position</a></span>
-          <span class="signature">&#8596; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="signature">&#8596; Offset</span> 
         </dt>
         <dd class="inherited">
           The position of this node relative to its parent. <a href="spritewidget/Node/position.html">[...]</a>
@@ -519,15 +518,15 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="rotation" class="property inherited">
           <span class="name"><a href="spritewidget/Node/rotation.html">rotation</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
-          The rotation of this node in degrees. <a href="spritewidget/Node/rotation.html">[...]</a>
+          The rotation of this node in radians. <a href="spritewidget/Node/rotation.html">[...]</a>
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+          <span class="name"><a href="spritewidget/Node/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span> 
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object.
@@ -535,7 +534,7 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="scale" class="property inherited">
           <span class="name"><a href="spritewidget/Node/scale.html">scale</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
           The scale of this node relative its parent. <a href="spritewidget/Node/scale.html">[...]</a>
@@ -543,7 +542,7 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="scaleX" class="property inherited">
           <span class="name"><a href="spritewidget/Node/scaleX.html">scaleX</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
           The horizontal scale of this node relative its parent. <a href="spritewidget/Node/scaleX.html">[...]</a>
@@ -551,7 +550,7 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="scaleY" class="property inherited">
           <span class="name"><a href="spritewidget/Node/scaleY.html">scaleY</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
           The vertical scale of this node relative its parent. <a href="spritewidget/Node/scaleY.html">[...]</a>
@@ -559,23 +558,23 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="skewX" class="property inherited">
           <span class="name"><a href="spritewidget/Node/skewX.html">skewX</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
-          The skew along the x-axis of this node in degrees. <a href="spritewidget/Node/skewX.html">[...]</a>
+          The skew along the x-axis of this node in radians. <a href="spritewidget/Node/skewX.html">[...]</a>
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="skewY" class="property inherited">
           <span class="name"><a href="spritewidget/Node/skewY.html">skewY</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
-          The skew along the y-axis of this node in degrees. <a href="spritewidget/Node/skewY.html">[...]</a>
+          The skew along the y-axis of this node in radians. <a href="spritewidget/Node/skewY.html">[...]</a>
           <div class="features">read / write, inherited</div>
 </dd>
         <dt id="spriteBox" class="property inherited">
           <span class="name"><a href="spritewidget/Node/spriteBox.html">spriteBox</a></span>
-          <span class="signature">&#8594; <a href="spritewidget/SpriteBox-class.html">SpriteBox</a></span>
+          <span class="signature">&#8594; <a href="spritewidget/SpriteBox-class.html">SpriteBox</a></span> 
         </dt>
         <dd class="inherited">
           The <a href="spritewidget/SpriteBox-class.html">SpriteBox</a> this node is added to, or null if it's not currently added to a <a href="spritewidget/SpriteBox-class.html">SpriteBox</a>. <a href="spritewidget/Node/spriteBox.html">[...]</a>
@@ -583,7 +582,7 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="transformMatrix" class="property inherited">
           <span class="name"><a href="spritewidget/Node/transformMatrix.html">transformMatrix</a></span>
-          <span class="signature">&#8594; Matrix4</span>
+          <span class="signature">&#8594; Matrix4</span> 
         </dt>
         <dd class="inherited">
           The transformMatrix describes the transformation from the node's parent. <a href="spritewidget/Node/transformMatrix.html">[...]</a>
@@ -591,7 +590,7 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="userInteractionEnabled" class="property inherited">
           <span class="name"><a href="spritewidget/Node/userInteractionEnabled.html">userInteractionEnabled</a></span>
-          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8596; bool</span> 
         </dt>
         <dd class="inherited">
           The node will receive user interactions, such as pointer (touch or mouse) events. <a href="spritewidget/Node/userInteractionEnabled.html">[...]</a>
@@ -599,7 +598,7 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="visible" class="property inherited">
           <span class="name"><a href="spritewidget/Node/visible.html">visible</a></span>
-          <span class="signature">&#8596; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="signature">&#8596; bool</span> 
         </dt>
         <dd class="inherited">
           The visibility of this node and its children.
@@ -607,7 +606,7 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
 </dd>
         <dt id="zPosition" class="property inherited">
           <span class="name"><a href="spritewidget/Node/zPosition.html">zPosition</a></span>
-          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+          <span class="signature">&#8596; double</span> 
         </dt>
         <dd class="inherited">
           The draw order of this node compared to its parent and its siblings. <a href="spritewidget/Node/zPosition.html">[...]</a>
@@ -620,46 +619,46 @@ The constraints are applied after the <a href="spritewidget/ParticleSystem/updat
       <h2>Methods</h2>
       <dl class="callables">
         <dt id="paint" class="callable">
-          <span class="name"><a href="spritewidget/ParticleSystem/paint.html">paint</a></span><span class="signature">(<wbr><span class="parameter" id="paint-param-canvas"><span class="type-annotation"><a href="dart-ui/Canvas-class.html">Canvas</a></span> <span class="parameter-name">canvas</span></span>)
+          <span class="name"><a href="spritewidget/ParticleSystem/paint.html">paint</a></span><span class="signature">(<wbr><span class="parameter" id="paint-param-canvas"><span class="type-annotation">Canvas</span> <span class="parameter-name">canvas</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd>
           Paints this node to the canvas. <a href="spritewidget/ParticleSystem/paint.html">[...]</a>
-          
+          <div class="features">override</div>
 </dd>
         <dt id="reset" class="callable">
           <span class="name"><a href="spritewidget/ParticleSystem/reset.html">reset</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd>
           
           
 </dd>
         <dt id="update" class="callable">
-          <span class="name"><a href="spritewidget/ParticleSystem/update.html">update</a></span><span class="signature">(<wbr><span class="parameter" id="update-param-dt"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">dt</span></span>)
+          <span class="name"><a href="spritewidget/ParticleSystem/update.html">update</a></span><span class="signature">(<wbr><span class="parameter" id="update-param-dt"><span class="type-annotation">double</span> <span class="parameter-name">dt</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd>
           Called before a frame is drawn. <a href="spritewidget/ParticleSystem/update.html">[...]</a>
-          
+          <div class="features">override</div>
 </dd>
         <dt id="addChild" class="callable inherited">
           <span class="name"><a href="spritewidget/Node/addChild.html">addChild</a></span><span class="signature">(<wbr><span class="parameter" id="addChild-param-child"><span class="type-annotation"><a href="spritewidget/Node-class.html">Node</a></span> <span class="parameter-name">child</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Adds a child to this node. <a href="spritewidget/Node/addChild.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="applyConstraints" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/applyConstraints.html">applyConstraints</a></span><span class="signature">(<wbr><span class="parameter" id="applyConstraints-param-dt"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">dt</span></span>)
+          <span class="name"><a href="spritewidget/Node/applyConstraints.html">applyConstraints</a></span><span class="signature">(<wbr><span class="parameter" id="applyConstraints-param-dt"><span class="type-annotation">double</span> <span class="parameter-name">dt</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Called to apply the <a href="spritewidget/Node/constraints.html">constraints</a> to the node. Normally, this method is
 called automatically by the <a href="spritewidget/SpriteBox-class.html">SpriteBox</a>, but it can be called manually
@@ -670,7 +669,7 @@ if the constraints need to be applied immediately.
           <span class="name"><a href="spritewidget/Node/computeTransformMatrix.html">computeTransformMatrix</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; Matrix4</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Computes the transformation matrix of this node. This method can be
 overriden if a custom matrix is required. There is usually no reason to
@@ -678,37 +677,37 @@ call this method directly.
           <div class="features">inherited</div>
 </dd>
         <dt id="convertPointFromNode" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/convertPointFromNode.html">convertPointFromNode</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointFromNode-param-point"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">point</span>, </span> <span class="parameter" id="convertPointFromNode-param-node"><span class="type-annotation"><a href="spritewidget/Node-class.html">Node</a></span> <span class="parameter-name">node</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="name"><a href="spritewidget/Node/convertPointFromNode.html">convertPointFromNode</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointFromNode-param-point"><span class="type-annotation">Offset</span> <span class="parameter-name">point</span>, </span> <span class="parameter" id="convertPointFromNode-param-node"><span class="type-annotation"><a href="spritewidget/Node-class.html">Node</a></span> <span class="parameter-name">node</span></span>)
+            <span class="returntype parameter">&#8594; Offset</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Converts a <code>point</code> from another <code>node</code>s coordinate system into the local coordinate system of this node. <a href="spritewidget/Node/convertPointFromNode.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="convertPointToBoxSpace" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/convertPointToBoxSpace.html">convertPointToBoxSpace</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointToBoxSpace-param-nodePoint"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">nodePoint</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="name"><a href="spritewidget/Node/convertPointToBoxSpace.html">convertPointToBoxSpace</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointToBoxSpace-param-nodePoint"><span class="type-annotation">Offset</span> <span class="parameter-name">nodePoint</span></span>)
+            <span class="returntype parameter">&#8594; Offset</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Converts a point from the local coordinate system of the node to the coordinate system of the <a href="spritewidget/SpriteBox-class.html">SpriteBox</a>. <a href="spritewidget/Node/convertPointToBoxSpace.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="convertPointToNodeSpace" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/convertPointToNodeSpace.html">convertPointToNodeSpace</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointToNodeSpace-param-boxPoint"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">boxPoint</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          <span class="name"><a href="spritewidget/Node/convertPointToNodeSpace.html">convertPointToNodeSpace</a></span><span class="signature">(<wbr><span class="parameter" id="convertPointToNodeSpace-param-boxPoint"><span class="type-annotation">Offset</span> <span class="parameter-name">boxPoint</span></span>)
+            <span class="returntype parameter">&#8594; Offset</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Converts a point from the coordinate system of the <a href="spritewidget/SpriteBox-class.html">SpriteBox</a> to the local coordinate system of the node. <a href="spritewidget/Node/convertPointToNodeSpace.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="handleEvent" class="callable inherited">
           <span class="name"><a href="spritewidget/Node/handleEvent.html">handleEvent</a></span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation"><a href="spritewidget/SpriteBoxEvent-class.html">SpriteBoxEvent</a></span> <span class="parameter-name">event</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Handles an event, such as a pointer (touch or mouse) event. <a href="spritewidget/Node/handleEvent.html">[...]</a>
           <div class="features">inherited</div>
@@ -717,7 +716,7 @@ call this method directly.
           <span class="name"><a href="spritewidget/Node/invalidateTransformMatrix.html">invalidateTransformMatrix</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Invalidates the current transform matrix. If the <a href="spritewidget/Node/computeTransformMatrix.html">computeTransformMatrix</a>
 method is overidden, this method should be called whenever a property
@@ -725,28 +724,28 @@ changes that affects the matrix.
           <div class="features">inherited</div>
 </dd>
         <dt id="isPointInside" class="callable inherited">
-          <span class="name"><a href="spritewidget/Node/isPointInside.html">isPointInside</a></span><span class="signature">(<wbr><span class="parameter" id="isPointInside-param-point"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">point</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="spritewidget/Node/isPointInside.html">isPointInside</a></span><span class="signature">(<wbr><span class="parameter" id="isPointInside-param-point"><span class="type-annotation">Offset</span> <span class="parameter-name">point</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns true if the <code>point</code> is inside the node, the <code>point</code> is in the local coordinate system of the node. <a href="spritewidget/Node/isPointInside.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+          <span class="name"><a href="spritewidget/Node/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="spritewidget/Node/noSuchMethod.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="removeAllChildren" class="callable inherited">
           <span class="name"><a href="spritewidget/Node/removeAllChildren.html">removeAllChildren</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Removes all children of this node. <a href="spritewidget/Node/removeAllChildren.html">[...]</a>
           <div class="features">inherited</div>
@@ -755,7 +754,7 @@ changes that affects the matrix.
           <span class="name"><a href="spritewidget/Node/removeChild.html">removeChild</a></span><span class="signature">(<wbr><span class="parameter" id="removeChild-param-child"><span class="type-annotation"><a href="spritewidget/Node-class.html">Node</a></span> <span class="parameter-name">child</span></span>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Removes a child from this node. <a href="spritewidget/Node/removeChild.html">[...]</a>
           <div class="features">inherited</div>
@@ -764,7 +763,7 @@ changes that affects the matrix.
           <span class="name"><a href="spritewidget/Node/removeFromParent.html">removeFromParent</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Removes this node from its parent node. <a href="spritewidget/Node/removeFromParent.html">[...]</a>
           <div class="features">inherited</div>
@@ -773,16 +772,16 @@ changes that affects the matrix.
           <span class="name"><a href="spritewidget/Node/spriteBoxPerformedLayout.html">spriteBoxPerformedLayout</a></span><span class="signature">(<wbr>)
             <span class="returntype parameter">&#8594; void</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Called whenever the <a href="spritewidget/SpriteBox-class.html">SpriteBox</a> is modified or resized, or if the device is rotated. <a href="spritewidget/Node/spriteBoxPerformedLayout.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
         <dt id="toString" class="callable inherited">
-          <span class="name"><a href="dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="spritewidget/Node/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
           Returns a string representation of this object.
           <div class="features">inherited</div>
@@ -794,12 +793,12 @@ changes that affects the matrix.
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
-            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="spritewidget/Node/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
           </span>
-        </dt>
+          </dt>
         <dd class="inherited">
-          The equality operator. <a href="dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="spritewidget/Node/operator_equals.html">[...]</a>
           <div class="features">inherited</div>
 </dd>
       </dl>
@@ -856,13 +855,13 @@ changes that affects the matrix.
       <li class="inherited"><a href="spritewidget/Node/children.html">children</a></li>
       <li class="inherited"><a href="spritewidget/Node/constraints.html">constraints</a></li>
       <li class="inherited"><a href="spritewidget/Node/handleMultiplePointers.html">handleMultiplePointers</a></li>
-      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="spritewidget/Node/hashCode.html">hashCode</a></li>
       <li class="inherited"><a href="spritewidget/Node/inverseTransformMatrix.html">inverseTransformMatrix</a></li>
       <li class="inherited"><a href="spritewidget/Node/parent.html">parent</a></li>
       <li class="inherited"><a href="spritewidget/Node/paused.html">paused</a></li>
       <li class="inherited"><a href="spritewidget/Node/position.html">position</a></li>
       <li class="inherited"><a href="spritewidget/Node/rotation.html">rotation</a></li>
-      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="spritewidget/Node/runtimeType.html">runtimeType</a></li>
       <li class="inherited"><a href="spritewidget/Node/scale.html">scale</a></li>
       <li class="inherited"><a href="spritewidget/Node/scaleX.html">scaleX</a></li>
       <li class="inherited"><a href="spritewidget/Node/scaleY.html">scaleY</a></li>
@@ -887,15 +886,15 @@ changes that affects the matrix.
       <li class="inherited"><a href="spritewidget/Node/handleEvent.html">handleEvent</a></li>
       <li class="inherited"><a href="spritewidget/Node/invalidateTransformMatrix.html">invalidateTransformMatrix</a></li>
       <li class="inherited"><a href="spritewidget/Node/isPointInside.html">isPointInside</a></li>
-      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="spritewidget/Node/noSuchMethod.html">noSuchMethod</a></li>
       <li class="inherited"><a href="spritewidget/Node/removeAllChildren.html">removeAllChildren</a></li>
       <li class="inherited"><a href="spritewidget/Node/removeChild.html">removeChild</a></li>
       <li class="inherited"><a href="spritewidget/Node/removeFromParent.html">removeFromParent</a></li>
       <li class="inherited"><a href="spritewidget/Node/spriteBoxPerformedLayout.html">spriteBoxPerformedLayout</a></li>
-      <li class="inherited"><a href="dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="spritewidget/Node/toString.html">toString</a></li>
     
       <li class="section-title inherited"><a href="spritewidget/ParticleSystem-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="spritewidget/Node/operator_equals.html">operator ==</a></li>
     
     
     
@@ -906,7 +905,7 @@ changes that affects the matrix.
 
 <footer>
   <span class="no-break">
-    spritewidget 0.9.16
+    spritewidget 0.9.18
   </span>
 
 </footer>

@@ -81,9 +81,8 @@
     
     
     
+    
       <li class="section-title"><a href="spritewidget/spritewidget-library.html#functions">Functions</a></li>
-      <li><a href="spritewidget/convertDegrees2Radians.html">convertDegrees2Radians</a></li>
-      <li><a href="spritewidget/convertRadians2Degrees.html">convertRadians2Degrees</a></li>
       <li><a href="spritewidget/deserializeBlendMode.html">deserializeBlendMode</a></li>
       <li><a href="spritewidget/deserializeColor.html">deserializeColor</a></li>
       <li><a href="spritewidget/deserializeColorSequence.html">deserializeColorSequence</a></li>
@@ -113,19 +112,19 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-    <h1>deserializeColorSequence function</h1>
+    <h1>deserializeColorSequence function </h1>
 
     <section class="multi-line-signature">
         <span class="returntype"><a href="spritewidget/ColorSequence-class.html">ColorSequence</a></span>
         <span class="name ">deserializeColorSequence</span>
-(<wbr><span class="parameter" id="deserializeColorSequence-param-data"><span class="type-annotation"><a href="dart-core/Map-class.html">Map</a></span> <span class="parameter-name">data</span></span>)
+(<wbr><span class="parameter" id="deserializeColorSequence-param-data"><span class="type-annotation">Map</span> <span class="parameter-name">data</span></span>)
     </section>
     
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span> </h2>
       <pre class="language-dart"><code class="language-dart">ColorSequence deserializeColorSequence(Map data) {
-  List&lt;int&gt; colorsData = data[&#39;colors&#39;].retype&lt;int&gt;();
-  List&lt;double&gt; stops = data[&#39;colorStops&#39;].retype&lt;double&gt;();
+  List&lt;int&gt; colorsData = data[&#39;colors&#39;].cast&lt;int&gt;();
+  List&lt;double&gt; stops = data[&#39;colorStops&#39;].cast&lt;double&gt;();
   List&lt;Color&gt; colors = &lt;Color&gt;[];
 
   for (int i = 0; i &lt; colorsData.length; i++) {
@@ -145,7 +144,7 @@
 
 <footer>
   <span class="no-break">
-    spritewidget 0.9.16
+    spritewidget 0.9.18
   </span>
 
 </footer>

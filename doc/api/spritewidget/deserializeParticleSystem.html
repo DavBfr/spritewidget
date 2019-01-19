@@ -81,9 +81,8 @@
     
     
     
+    
       <li class="section-title"><a href="spritewidget/spritewidget-library.html#functions">Functions</a></li>
-      <li><a href="spritewidget/convertDegrees2Radians.html">convertDegrees2Radians</a></li>
-      <li><a href="spritewidget/convertRadians2Degrees.html">convertRadians2Degrees</a></li>
       <li><a href="spritewidget/deserializeBlendMode.html">deserializeBlendMode</a></li>
       <li><a href="spritewidget/deserializeColor.html">deserializeColor</a></li>
       <li><a href="spritewidget/deserializeColorSequence.html">deserializeColorSequence</a></li>
@@ -113,12 +112,12 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-    <h1>deserializeParticleSystem function</h1>
+    <h1>deserializeParticleSystem function </h1>
 
     <section class="multi-line-signature">
         <span class="returntype"><a href="spritewidget/ParticleSystem-class.html">ParticleSystem</a></span>
         <span class="name ">deserializeParticleSystem</span>
-(<wbr><span class="parameter" id="deserializeParticleSystem-param-data"><span class="type-annotation"><a href="dart-core/Map-class.html">Map</a></span> <span class="parameter-name">data</span>, {</span> <span class="parameter" id="deserializeParticleSystem-param-particleSystem"><span class="type-annotation"><a href="spritewidget/ParticleSystem-class.html">ParticleSystem</a></span> <span class="parameter-name">particleSystem</span>, </span> <span class="parameter" id="deserializeParticleSystem-param-texture"><span class="type-annotation"><a href="spritewidget/SpriteTexture-class.html">SpriteTexture</a></span> <span class="parameter-name">texture</span></span> })
+(<wbr><span class="parameter" id="deserializeParticleSystem-param-data"><span class="type-annotation">Map</span> <span class="parameter-name">data</span>, {</span> <span class="parameter" id="deserializeParticleSystem-param-particleSystem"><span class="type-annotation"><a href="spritewidget/ParticleSystem-class.html">ParticleSystem</a></span> <span class="parameter-name">particleSystem</span>, </span> <span class="parameter" id="deserializeParticleSystem-param-texture"><span class="type-annotation"><a href="spritewidget/SpriteTexture-class.html">SpriteTexture</a></span> <span class="parameter-name">texture</span></span> })
     </section>
     
     <section class="summary source-code" id="source">
@@ -129,7 +128,7 @@
 
   particleSystem.life = data[&#39;life&#39;];
   particleSystem.lifeVar = data[&#39;lifeVar&#39;];
-  particleSystem.posVar = deserializeOffset(data[&#39;posVar&#39;].retype&lt;double&gt;());
+  particleSystem.posVar = deserializeOffset(data[&#39;posVar&#39;].cast&lt;double&gt;());
   particleSystem.startSize = data[&#39;startSize&#39;];
   particleSystem.startSizeVar = data[&#39;startSizeVar&#39;];
   particleSystem.endSize = data[&#39;endSize&#39;];
@@ -156,7 +155,7 @@
   particleSystem.blueVar = data[&#39;blueVar&#39;];
   particleSystem.numParticlesToEmit = data[&#39;numParticlesToEmit&#39;];
   particleSystem.autoRemoveOnFinish = data[&#39;autoRemoveOnFinish&#39;];
-  particleSystem.gravity = deserializeOffset(data[&#39;gravity&#39;].retype&lt;double&gt;());
+  particleSystem.gravity = deserializeOffset(data[&#39;gravity&#39;].cast&lt;double&gt;());
   if (data[&#39;blendMode&#39;] != null)
     particleSystem.transferMode = deserializeBlendMode(data[&#39;blendMode&#39;]);
   else
@@ -175,7 +174,7 @@
 
 <footer>
   <span class="no-break">
-    spritewidget 0.9.16
+    spritewidget 0.9.18
   </span>
 
 </footer>
