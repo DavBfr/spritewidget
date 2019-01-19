@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:spritewidget/spritewidget.dart';
@@ -198,8 +199,8 @@ class ParticleDesignerState extends State<ParticleDesigner> with SingleTickerPro
                   new PropertyDouble(
                     name: 'Direction',
                     value: _particleWorld.particleSystem.direction,
-                    minValue: -360.0,
-                    maxValue: 360.0,
+                    minValue: -360.0 * math.pi / 180.0,
+                    maxValue: 360.0 * math.pi / 180.0,
                     onUpdated: (double value) {
                       setState(() {
                         _particleWorld.particleSystem.direction = value;
@@ -210,7 +211,7 @@ class ParticleDesignerState extends State<ParticleDesigner> with SingleTickerPro
                     name: 'Direction variance',
                     value: _particleWorld.particleSystem.directionVar,
                     minValue: 0.0,
-                    maxValue: 360.0,
+                    maxValue: 360.0 * math.pi / 180.0,
                     onUpdated: (double value) {
                       setState(() {
                         _particleWorld.particleSystem.directionVar = value;
@@ -344,8 +345,8 @@ class ParticleDesignerState extends State<ParticleDesigner> with SingleTickerPro
                   new PropertyDouble(
                     name: 'Start rotation',
                     value: _particleWorld.particleSystem.startRotation,
-                    minValue: -360.0,
-                    maxValue: 360.0,
+                    minValue: -360.0 * math.pi / 180.0,
+                    maxValue: 360.0 * math.pi / 180.0,
                     onUpdated: (double value) {
                       setState(() {
                         _particleWorld.particleSystem.startRotation = value;
@@ -356,7 +357,7 @@ class ParticleDesignerState extends State<ParticleDesigner> with SingleTickerPro
                     name: 'Start rotation variance',
                     value: _particleWorld.particleSystem.startRotationVar,
                     minValue: 0.0,
-                    maxValue: 360.0,
+                    maxValue: 360.0 * math.pi / 180.0,
                     onUpdated: (double value) {
                       setState(() {
                         _particleWorld.particleSystem.startRotationVar = value;
@@ -366,8 +367,8 @@ class ParticleDesignerState extends State<ParticleDesigner> with SingleTickerPro
                   new PropertyDouble(
                     name: 'End rotation',
                     value: _particleWorld.particleSystem.endRotation,
-                    minValue: -360.0,
-                    maxValue: 360.0,
+                    minValue: -360.0 * math.pi / 180.0,
+                    maxValue: 360.0 * math.pi / 180.0,
                     onUpdated: (double value) {
                       setState(() {
                         _particleWorld.particleSystem.endRotation = value;
@@ -381,7 +382,7 @@ class ParticleDesignerState extends State<ParticleDesigner> with SingleTickerPro
                     maxValue: 360.0,
                     onUpdated: (double value) {
                       setState(() {
-                        _particleWorld.particleSystem.endRotationVar = value;
+                        _particleWorld.particleSystem.endRotationVar = value * math.pi / 180.0;
                       });
                     },
                   ),

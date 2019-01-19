@@ -4,6 +4,7 @@
 
 import 'dart:async';
 import 'dart:ui' as ui show Image;
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:spritewidget/spritewidget.dart';
@@ -421,12 +422,12 @@ class Ray extends Sprite {
   Ray() : super.fromImage(_images['assets/ray.png']) {
     pivot = const Offset(0.0, 0.5);
     transferMode = BlendMode.plus;
-    rotation = randomDouble() * 360.0;
+    rotation = randomDouble() * 360.0 * math.pi / 180.0;
     maxOpacity = randomDouble() * 0.2;
     opacity = maxOpacity;
     scaleX = 2.5 + randomDouble();
     scaleY = 0.3;
-    _rotationSpeed = randomSignedDouble() * 2.0;
+    _rotationSpeed = randomSignedDouble() * 2.0 * math.pi / 180.0;
 
     // Scale animation
     double scaleTime = randomSignedDouble() * 2.0 + 4.0;
@@ -461,7 +462,7 @@ class Rain extends Node {
       _sprites['raindrop.png'],
       transferMode: BlendMode.srcATop,
       posVar: const Offset(1300.0, 0.0),
-      direction: 90.0,
+      direction: 90.0 * math.pi / 180.0,
       directionVar: 0.0,
       speed: 1000.0 / distance,
       speedVar: 100.0 / distance,
@@ -473,7 +474,7 @@ class Rain extends Node {
       lifeVar: 1.0 * distance
     );
     particles.position = const Offset(1024.0, -200.0);
-    particles.rotation = 10.0;
+    particles.rotation = 10.0 * math.pi / 180.0;
     particles.opacity = 0.0;
 
     _particles.add(particles);
@@ -528,7 +529,7 @@ class Snow extends Node {
       texture,
       transferMode: BlendMode.srcATop,
       posVar: const Offset(1300.0, 0.0),
-      direction: 90.0,
+      direction: 90.0 * math.pi / 180.0,
       directionVar: 0.0,
       speed: 150.0 / distance,
       speedVar: 50.0 / distance,
@@ -539,8 +540,8 @@ class Snow extends Node {
       life: 20.0 * distance,
       lifeVar: 10.0 * distance,
       emissionRate: 2.0,
-      startRotationVar: 360.0,
-      endRotationVar: 360.0,
+      startRotationVar: 360.0 * math.pi / 180.0,
+      endRotationVar: 360.0 * math.pi / 180.0,
       radialAccelerationVar: 10.0 / distance,
       tangentialAccelerationVar: 10.0 / distance
     );
